@@ -1,0 +1,35 @@
+{
+  "arm": "control",
+  "parameters": {
+    "sigma_z_eps": 0.27830776649078415,
+    "x_hi": 1.4620688061231504,
+    "p1_x": 0.0502979531819958,
+    "p2_x": 0.03287436873599738,
+    "theta_max": 12.8
+  },
+  "moments": {
+    "top1": 0.3448798061525457,
+    "ent_top1": 0.13536978539656344,
+    "ent_wealth": 0.11624876724922396,
+    "ent_pop": 0.015011724661981883,
+    "top01": 0.24806210897984837,
+    "debt_output": 2.6374539136286277
+  },
+  "elapsed_minutes": 30.13017904235001,
+  "environment": {
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_DBN_MAX_ITER": "2000",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_P1_X": "0.0502979531819958",
+    "GKK_P2_X": "0.032874368735997382",
+    "GKK_RESULT_FOLDER": "experiments/robustness_gkkoc_2022/runs/looser/control/solves/521a71cabb46/",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.27830776649078415",
+    "GKK_THETA_MAX": "12.800000000000001",
+    "GKK_X_HI": "1.4620688061231504",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "OMP_NUM_THREADS": "4"
+  }
+}

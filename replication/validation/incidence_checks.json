@@ -1,0 +1,24 @@
+{
+  "policy": [
+    0.07,
+    -0.5,
+    0.0
+  ],
+  "ce2_newborn": 23.53851786470429,
+  "loss_age45to54_highest_ability": -24.684090024878323,
+  "gain_age20to24_ability8": 36.63777951260438,
+  "excluded_nonfinite_mass": 7.356275782671684e-10,
+  "excluded_age_ability_indices": [
+    [
+      80,
+      8
+    ]
+  ],
+  "quoted_groups_all_finite": true,
+  "weighting": "benchmark mass within age and permanent ability group; compares stationary states, not transition cohorts",
+  "hashes": {
+    "Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/business_financing_2022/rn_reform/size_by_age_z.txt": "2dce9ebde05d3a1fb60225e42017922837803a172f9d03f0a9b61b2eafd57b56",
+    "Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/experiments/policy_reoptimization_2022/runs/thesis/v2_fecede9519f7/54b48c5df64e6d40_35be0941/Joint_Tax/CE_by_age_z.txt": "31889f20508e39cec4352d840ea743ffe6b526405c8d5e847f26c1bd05729f92",
+    "Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/experiments/policy_reoptimization_2022/runs/thesis/v2_fecede9519f7/54b48c5df64e6d40_35be0941/Joint_Tax/CE_by_AgeGroup_z.txt": "d86a0357894dc6ee94388c2eb8f963f4f7624b28db8a55d39b2c6a477c3bad89"
+  }
+}

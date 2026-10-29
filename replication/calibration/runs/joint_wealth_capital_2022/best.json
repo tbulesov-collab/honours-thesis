@@ -1,0 +1,60 @@
+{
+  "objective": "maximize newborn CE2 welfare",
+  "budget_rule": "labor tax adjusts to match benchmark government revenue",
+  "benchmark": "calibration/runs/business_financing_2022/rn_reform",
+  "bounds": {
+    "tau_w": [
+      0.0,
+      0.08
+    ],
+    "tau_k": [
+      -0.5,
+      0.25
+    ],
+    "tau_bq": [
+      0.3999999999,
+      0.4000000001
+    ],
+    "tau_l": [
+      0.0,
+      0.6
+    ]
+  },
+  "optimizer_status": {
+    "global_success": false,
+    "global_message": "Maximum number of iterations has been exceeded.",
+    "local_success": true,
+    "local_message": "Optimization terminated successfully.",
+    "boundary_flags": {
+      "tau_k": "lower"
+    }
+  },
+  "calibration_environment": {
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.2783077664907841",
+    "GKK_X_HI": "1.46206880612315",
+    "GKK_P1_X": "0.0502979531819958",
+    "GKK_P2_X": "0.03287436873599738",
+    "GKK_THETA_MAX": "2.952129241933026"
+  },
+  "best": {
+    "status": "ok",
+    "key": "4d933124e606",
+    "tau_w": 0.07129528494896156,
+    "tau_k": -0.4982312866513432,
+    "tau_bq": 0.4000000000084517,
+    "tau_l": 0.11040301858814228,
+    "psi": 0.8895969814118577,
+    "ce2_newborn": 19.813667619988507,
+    "ce2_population": 10.230254177776409,
+    "ce1_newborn": 21.197309894301235,
+    "output_growth": 16.40948616397089,
+    "consumption_growth": 19.369990807290606,
+    "top1_wealth_share": 0.5680784411500648,
+    "revenue": 0.20565300768223854,
+    "revenue_gap": 6.571053960319206e-06,
+    "revenue_relative_gap": 3.195316227237573e-05,
+    "elapsed_seconds": 994.1398406669905,
+    "result_directory": "calibration/runs/joint_wealth_capital_2022/4d933124e606/Joint_Tax"
+  }
+}

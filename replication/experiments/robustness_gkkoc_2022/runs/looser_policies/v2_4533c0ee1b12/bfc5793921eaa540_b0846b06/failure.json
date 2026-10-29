@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "context_id": "4533c0ee1b12deeb46cd153519ca7c4faa0e0eb27e7aebd1180ed2b8226ea9d6",
+  "key": "bfc5793921eaa540",
+  "rates": [
+    0.0,
+    -0.05,
+    0.4
+  ],
+  "reason": "evaluator exited with code 1",
+  "log": "experiments/robustness_gkkoc_2022/runs/looser_policies/v2_4533c0ee1b12/bfc5793921eaa540_b0846b06/run.log"
+}

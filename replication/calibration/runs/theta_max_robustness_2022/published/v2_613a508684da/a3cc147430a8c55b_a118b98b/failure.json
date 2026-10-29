@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "context_id": "613a508684daca2032a54e7a050d6505ad09096c127c21fa56e90ccc59583a6e",
+  "key": "a3cc147430a8c55b",
+  "rates": [
+    0.0,
+    -0.13618034,
+    0.4
+  ],
+  "reason": "evaluator exited with code 1",
+  "log": "calibration/runs/theta_max_robustness_2022/published/v2_613a508684da/a3cc147430a8c55b_a118b98b/run.log"
+}

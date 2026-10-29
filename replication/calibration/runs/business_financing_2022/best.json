@@ -1,0 +1,24 @@
+{
+  "cache_version": "business-financing-2022-v1",
+  "target_file": "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/business_financing_2022.csv",
+  "target": 1.5628872107,
+  "theta_max": 2.9521292419330263,
+  "published_theta_max": 2.8,
+  "model_debt_output": 1.5629566462677662,
+  "gap": 6.943556776617399e-05,
+  "scf_parameters": {
+    "sigma_z_eps": 0.27830776649078415,
+    "x_hi": 1.4620688061231504,
+    "p1_x": 0.0502979531819958,
+    "p2_x": 0.03287436873599738
+  },
+  "benchmark_moments": {
+    "wealth_output": 3.011026534650085,
+    "top_1_wealth_share": 0.35473447359922017,
+    "top_0_1_wealth_share": 0.22595867805147535,
+    "entrepreneur_population_share": 0.061315282156518415,
+    "entrepreneurs_in_top_1_share": 0.6158227118943921,
+    "entrepreneur_wealth_share": 0.32230618044280207
+  },
+  "run_directory": "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/business_financing_2022/4c6c1d38eeac"
+}

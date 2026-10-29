@@ -1,0 +1,20 @@
+{
+  "variant": "timing",
+  "elapsed_minutes": 28.387232929850384,
+  "environment": {
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_DBN_MAX_ITER": "700",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_P1_X": "0.0502979531819958",
+    "GKK_P2_X": "0.032874368735997382",
+    "GKK_RESULT_FOLDER": "experiments/model_spec_sensitivity_2022/runs/timing/benchmark/",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.27830776649078415",
+    "GKK_THETA_MAX": "2.9521292419330263",
+    "GKK_X_HI": "1.4620688061231504",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "OMP_NUM_THREADS": "4"
+  }
+}

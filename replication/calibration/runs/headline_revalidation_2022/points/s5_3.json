@@ -1,0 +1,41 @@
+{
+  "point": "s5_3",
+  "label": "Wealth-capital, estate fixed (Table VIII)",
+  "fixed_labor": false,
+  "old_ce2": 19.813667619988507,
+  "source": "calibration/runs/joint_wealth_capital_2022/best.json",
+  "rates": [
+    0.07129528494896156,
+    -0.4982312866513432,
+    0.4000000000084517
+  ],
+  "status": "ok",
+  "result": {
+    "status": "ok",
+    "schema": 2,
+    "context_id": "6ef65c226366a788e659a8aa1259c749e3c3dd98d1439e5b0129681c20518317",
+    "key": "ce2c3b8ac6c29842",
+    "tau_w": 0.07129528494896156,
+    "tau_k": -0.4982312866513432,
+    "tau_bq": 0.4000000000084517,
+    "tau_l": 0.11036881386934161,
+    "psi": 0.8896311861306584,
+    "ce2_newborn": 19.82763296233836,
+    "ce2_population": 10.240336013205642,
+    "ce1_newborn": 21.203250694227258,
+    "output_growth": 16.41308654234237,
+    "consumption_growth": 19.37949007658073,
+    "top1_wealth_share": 0.5678285706115186,
+    "revenue": 0.2056527554867898,
+    "revenue_gap": 6.318858511572545e-06,
+    "revenue_relative_gap": 3.072680769564886e-05,
+    "equilibrium_converged": true,
+    "equilibrium_residual": 1.5484042177778268e-09,
+    "aggregate_residual": 6.924749609878624e-07,
+    "elapsed_seconds": 2552.1103936669824,
+    "result_directory": "calibration/runs/headline_revalidation_2022/labour_residual/v2_6ef65c226366/ce2c3b8ac6c29842_4e707f10/Joint_Tax",
+    "feasible": true,
+    "output_sha256": "70430c3f600951e4334e20cf3d96d106513354c7093f6ff90c75b2287b338cb5"
+  },
+  "feasible": true
+}

@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "context_id": "6ef65c226366a788e659a8aa1259c749e3c3dd98d1439e5b0129681c20518317",
+  "key": "105cd9fd0084b648",
+  "rates": [
+    0.030618034,
+    0.0,
+    0.5
+  ],
+  "reason": "Model or benchmark inputs changed during this search; start a new evaluator",
+  "log": "calibration/runs/estate_tax_grid_2022/v2_6ef65c226366/105cd9fd0084b648_bf1ef41c/run.log"
+}

@@ -1,0 +1,35 @@
+{
+  "arm": "mu08",
+  "parameters": {
+    "sigma_z_eps": 0.3361443809150181,
+    "x_hi": 1.8142855154495454,
+    "p1_x": 0.04887803816574472,
+    "p2_x": 0.036354690972634975,
+    "theta_max": 3.1
+  },
+  "moments": {
+    "top1": 0.3536063551043651,
+    "ent_top1": 0.5513333386083343,
+    "ent_wealth": 0.3383626191546357,
+    "ent_pop": 0.07727067775802585,
+    "top01": 0.19681863005473618,
+    "debt_output": 1.5929914876454243
+  },
+  "elapsed_minutes": 14.804927354866717,
+  "environment": {
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_DBN_MAX_ITER": "2000",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_P1_X": "0.048878038165744722",
+    "GKK_P2_X": "0.036354690972634975",
+    "GKK_RESULT_FOLDER": "experiments/robustness_gkkoc_2022/runs/c7/mu08/solves/864725b64ce3/",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.33614438091501808",
+    "GKK_THETA_MAX": "3.1000000000000001",
+    "GKK_X_HI": "1.8142855154495454",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "OMP_NUM_THREADS": "4"
+  }
+}

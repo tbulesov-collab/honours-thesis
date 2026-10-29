@@ -1,0 +1,35 @@
+{
+  "side": "plus",
+  "parameters": {
+    "sigma_z_eps": 0.25254775585744144,
+    "x_hi": 1.5636323629118323,
+    "p1_x": 0.04526815786379622,
+    "p2_x": 0.03365591331231617,
+    "theta_max": 2.9576879059053653
+  },
+  "moments": {
+    "top1": 0.34980920762117507,
+    "ent_top1": 0.5470182987717158,
+    "ent_wealth": 0.3235361239203878,
+    "ent_pop": 0.06313213464924594,
+    "top01": 0.2160680593537415,
+    "debt_output": 1.563171739523859
+  },
+  "elapsed_minutes": 14.414417299298414,
+  "environment": {
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_DBN_MAX_ITER": "2000",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_P1_X": "0.045268157863796218",
+    "GKK_P2_X": "0.033655913312316169",
+    "GKK_RESULT_FOLDER": "experiments/model_spec_sensitivity_2022/flat/plus/solves/9aacd406a975/",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.25254775585744144",
+    "GKK_THETA_MAX": "2.9576879059053653",
+    "GKK_X_HI": "1.5636323629118323",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "OMP_NUM_THREADS": "4"
+  }
+}

@@ -1,0 +1,560 @@
+{
+  "schema": 1,
+  "model_executed": false,
+  "input_archive_sha256": {
+    "scfp2022excel.zip": "9721aa73ef1df237d0c5a7ce2578ff9a45c8e5a2ef8efc4fab132c6885ace050",
+    "scf2022s.zip": "409e6811df895766d50b2f597c10b1b3c5813e7d3e0e45d910ad26c0cb07f4eb",
+    "scf2022rw1s.zip": "0135b0bcc2858bd326010ef16c1ca6c7c10f55e53c93e4f3b92fd408b342f239"
+  },
+  "families": 4595,
+  "records": 22975,
+  "implicates": 5,
+  "income_scale_2021_to_2022": 1.0809118236472945,
+  "income_scale_definition": "4315/3992; Federal Reserve 2022 CPILAG",
+  "reference_sha256": "788b317fae755c12cd3bd1ad6af9331aa664493bfed64bb42b631e7dbb929643",
+  "comparison": {
+    "ok": true,
+    "numeric_cells": 28,
+    "exact_float_matches": 2,
+    "absolute_tolerance": 1e-12,
+    "maximum_absolute_difference": 3.885780586188048e-16,
+    "comparisons": [
+      {
+        "definition_id": "active_manager_paper_proxy",
+        "moment": "entrepreneur_population_share",
+        "recomputed": 0.13087885965104748,
+        "reference": 0.13087885965104745,
+        "absolute_difference": 2.7755575615628914e-17
+      },
+      {
+        "definition_id": "active_manager_paper_proxy",
+        "moment": "entrepreneur_wealth_share",
+        "recomputed": 0.44960957545049407,
+        "reference": 0.4496095754504938,
+        "absolute_difference": 2.7755575615628914e-16
+      },
+      {
+        "definition_id": "active_manager_paper_proxy",
+        "moment": "entrepreneur_share_top1",
+        "recomputed": 0.6438875306134089,
+        "reference": 0.643887530613409,
+        "absolute_difference": 1.1102230246251565e-16
+      },
+      {
+        "definition_id": "active_manager_paper_proxy",
+        "moment": "wealth_top1_share",
+        "recomputed": 0.35099221101835104,
+        "reference": 0.35099221101835076,
+        "absolute_difference": 2.7755575615628914e-16
+      },
+      {
+        "definition_id": "business_majority_model_flow",
+        "moment": "entrepreneur_population_share",
+        "recomputed": 0.06711974186458575,
+        "reference": 0.06711974186458576,
+        "absolute_difference": 1.3877787807814457e-17
+      },
+      {
+        "definition_id": "business_majority_model_flow",
+        "moment": "entrepreneur_wealth_share",
+        "recomputed": 0.2433014391720015,
+        "reference": 0.24330143917200142,
+        "absolute_difference": 8.326672684688674e-17
+      },
+      {
+        "definition_id": "business_majority_model_flow",
+        "moment": "entrepreneur_share_top1",
+        "recomputed": 0.39766684465663604,
+        "reference": 0.3976668446566364,
+        "absolute_difference": 3.3306690738754696e-16
+      },
+      {
+        "definition_id": "business_majority_model_flow",
+        "moment": "wealth_top1_share",
+        "recomputed": 0.35099221101835104,
+        "reference": 0.35099221101835076,
+        "absolute_difference": 2.7755575615628914e-16
+      },
+      {
+        "definition_id": "active_manager_and_business_majority",
+        "moment": "entrepreneur_population_share",
+        "recomputed": 0.040326412545580045,
+        "reference": 0.04032641254558004,
+        "absolute_difference": 6.938893903907228e-18
+      },
+      {
+        "definition_id": "active_manager_and_business_majority",
+        "moment": "entrepreneur_wealth_share",
+        "recomputed": 0.2111683515091299,
+        "reference": 0.21116835150912977,
+        "absolute_difference": 1.3877787807814457e-16
+      },
+      {
+        "definition_id": "active_manager_and_business_majority",
+        "moment": "entrepreneur_share_top1",
+        "recomputed": 0.33511820071190757,
+        "reference": 0.33511820071190795,
+        "absolute_difference": 3.885780586188048e-16
+      },
+      {
+        "definition_id": "active_manager_and_business_majority",
+        "moment": "wealth_top1_share",
+        "recomputed": 0.35099221101835104,
+        "reference": 0.35099221101835076,
+        "absolute_difference": 2.7755575615628914e-16
+      },
+      {
+        "definition_id": "business_majority_total_scf_income",
+        "moment": "entrepreneur_population_share",
+        "recomputed": 0.05849820467257731,
+        "reference": 0.05849820467257731,
+        "absolute_difference": 0.0
+      },
+      {
+        "definition_id": "business_majority_total_scf_income",
+        "moment": "entrepreneur_wealth_share",
+        "recomputed": 0.20508218249149576,
+        "reference": 0.20508218249149568,
+        "absolute_difference": 8.326672684688674e-17
+      },
+      {
+        "definition_id": "business_majority_total_scf_income",
+        "moment": "entrepreneur_share_top1",
+        "recomputed": 0.34334584375168536,
+        "reference": 0.34334584375168564,
+        "absolute_difference": 2.7755575615628914e-16
+      },
+      {
+        "definition_id": "business_majority_total_scf_income",
+        "moment": "wealth_top1_share",
+        "recomputed": 0.35099221101835104,
+        "reference": 0.35099221101835076,
+        "absolute_difference": 2.7755575615628914e-16
+      },
+      {
+        "definition_id": "sole_prop_farm_only_diagnostic",
+        "moment": "entrepreneur_population_share",
+        "recomputed": 0.04243320510195835,
+        "reference": 0.04243320510195836,
+        "absolute_difference": 6.938893903907228e-18
+      },
+      {
+        "definition_id": "sole_prop_farm_only_diagnostic",
+        "moment": "entrepreneur_wealth_share",
+        "recomputed": 0.053830918585543674,
+        "reference": 0.05383091858554366,
+        "absolute_difference": 1.3877787807814457e-17
+      },
+      {
+        "definition_id": "sole_prop_farm_only_diagnostic",
+        "moment": "entrepreneur_share_top1",
+        "recomputed": 0.034257645000412805,
+        "reference": 0.0342576450004128,
+        "absolute_difference": 6.938893903907228e-18
+      },
+      {
+        "definition_id": "sole_prop_farm_only_diagnostic",
+        "moment": "wealth_top1_share",
+        "recomputed": 0.35099221101835104,
+        "reference": 0.35099221101835076,
+        "absolute_difference": 2.7755575615628914e-16
+      },
+      {
+        "definition_id": "business_majority_without_pension_withdrawals",
+        "moment": "entrepreneur_population_share",
+        "recomputed": 0.06855538141076316,
+        "reference": 0.06855538141076319,
+        "absolute_difference": 2.7755575615628914e-17
+      },
+      {
+        "definition_id": "business_majority_without_pension_withdrawals",
+        "moment": "entrepreneur_wealth_share",
+        "recomputed": 0.2532293055810416,
+        "reference": 0.25322930558104156,
+        "absolute_difference": 5.551115123125783e-17
+      },
+      {
+        "definition_id": "business_majority_without_pension_withdrawals",
+        "moment": "entrepreneur_share_top1",
+        "recomputed": 0.4141159490722172,
+        "reference": 0.4141159490722176,
+        "absolute_difference": 3.885780586188048e-16
+      },
+      {
+        "definition_id": "business_majority_without_pension_withdrawals",
+        "moment": "wealth_top1_share",
+        "recomputed": 0.35099221101835104,
+        "reference": 0.35099221101835076,
+        "absolute_difference": 2.7755575615628914e-16
+      },
+      {
+        "definition_id": "business_majority_minus1_as_zero",
+        "moment": "entrepreneur_population_share",
+        "recomputed": 0.06716130164840413,
+        "reference": 0.06716130164840413,
+        "absolute_difference": 0.0
+      },
+      {
+        "definition_id": "business_majority_minus1_as_zero",
+        "moment": "entrepreneur_wealth_share",
+        "recomputed": 0.24334319838801005,
+        "reference": 0.24334319838800997,
+        "absolute_difference": 8.326672684688674e-17
+      },
+      {
+        "definition_id": "business_majority_minus1_as_zero",
+        "moment": "entrepreneur_share_top1",
+        "recomputed": 0.39766684465663604,
+        "reference": 0.3976668446566364,
+        "absolute_difference": 3.3306690738754696e-16
+      },
+      {
+        "definition_id": "business_majority_minus1_as_zero",
+        "moment": "wealth_top1_share",
+        "recomputed": 0.35099221101835104,
+        "reference": 0.35099221101835076,
+        "absolute_difference": 2.7755575615628914e-16
+      }
+    ]
+  },
+  "estimates": [
+    {
+      "definition_id": "active_manager_paper_proxy",
+      "entrepreneur_population_share": 0.13087885965104748,
+      "entrepreneur_wealth_share": 0.44960957545049407,
+      "entrepreneur_share_top1": 0.6438875306134089,
+      "wealth_top1_share": 0.35099221101835104,
+      "definition": "X3104 == 1; current active private-business management by someone in the family"
+    },
+    {
+      "definition_id": "business_majority_model_flow",
+      "entrepreneur_population_share": 0.06711974186458575,
+      "entrepreneur_wealth_share": 0.2433014391720015,
+      "entrepreneur_share_top1": 0.39766684465663604,
+      "wealth_top1_share": 0.35099221101835104,
+      "definition": "D > 0 and BUSSEFARMINC > 0.5*D; D=BUSSEFARMINC+WAGEINC+INTDIVINC+SSRETINC"
+    },
+    {
+      "definition_id": "active_manager_and_business_majority",
+      "entrepreneur_population_share": 0.040326412545580045,
+      "entrepreneur_wealth_share": 0.2111683515091299,
+      "entrepreneur_share_top1": 0.33511820071190757,
+      "wealth_top1_share": 0.35099221101835104,
+      "definition": "X3104 == 1 AND business_majority_model_flow"
+    },
+    {
+      "definition_id": "business_majority_total_scf_income",
+      "entrepreneur_population_share": 0.05849820467257731,
+      "entrepreneur_wealth_share": 0.20508218249149576,
+      "entrepreneur_share_top1": 0.34334584375168536,
+      "wealth_top1_share": 0.35099221101835104,
+      "definition": "INCOME > 0 and BUSSEFARMINC > 0.5*INCOME"
+    },
+    {
+      "definition_id": "sole_prop_farm_only_diagnostic",
+      "entrepreneur_population_share": 0.04243320510195835,
+      "entrepreneur_wealth_share": 0.053830918585543674,
+      "entrepreneur_share_top1": 0.034257645000412805,
+      "wealth_top1_share": 0.35099221101835104,
+      "definition": "D > 0 and CPI*X5704 > 0.5*D; removes mixed X5714 from numerator only, including legitimate other-business income"
+    },
+    {
+      "definition_id": "business_majority_without_pension_withdrawals",
+      "entrepreneur_population_share": 0.06855538141076316,
+      "entrepreneur_wealth_share": 0.2532293055810416,
+      "entrepreneur_share_top1": 0.4141159490722172,
+      "wealth_top1_share": 0.35099221101835104,
+      "definition": "D-PENACCTWD > 0 and BUSSEFARMINC > 0.5*(D-PENACCTWD)"
+    },
+    {
+      "definition_id": "business_majority_minus1_as_zero",
+      "entrepreneur_population_share": 0.06716130164840413,
+      "entrepreneur_wealth_share": 0.24334319838801005,
+      "entrepreneur_share_top1": 0.39766684465663604,
+      "wealth_top1_share": 0.35099221101835104,
+      "definition": "Broad flow proxy with documented raw -1 (nothing) income codes set to zero; other negative income retained"
+    }
+  ],
+  "implicate_estimates": [
+    {
+      "implicate": 1,
+      "definition_id": "active_manager_paper_proxy",
+      "entrepreneur_population_share": 0.12952339871007085,
+      "entrepreneur_wealth_share": 0.44861429987698154,
+      "entrepreneur_share_top1": 0.6338884237254211,
+      "wealth_top1_share": 0.357119495739761
+    },
+    {
+      "implicate": 1,
+      "definition_id": "business_majority_model_flow",
+      "entrepreneur_population_share": 0.06533350349892342,
+      "entrepreneur_wealth_share": 0.24175503724028372,
+      "entrepreneur_share_top1": 0.3872747079893903,
+      "wealth_top1_share": 0.357119495739761
+    },
+    {
+      "implicate": 1,
+      "definition_id": "active_manager_and_business_majority",
+      "entrepreneur_population_share": 0.03938156612298736,
+      "entrepreneur_wealth_share": 0.21025886158117538,
+      "entrepreneur_share_top1": 0.32494966625855676,
+      "wealth_top1_share": 0.357119495739761
+    },
+    {
+      "implicate": 1,
+      "definition_id": "business_majority_total_scf_income",
+      "entrepreneur_population_share": 0.057282179998280704,
+      "entrepreneur_wealth_share": 0.20191296283061963,
+      "entrepreneur_share_top1": 0.32939355067078047,
+      "wealth_top1_share": 0.357119495739761
+    },
+    {
+      "implicate": 1,
+      "definition_id": "sole_prop_farm_only_diagnostic",
+      "entrepreneur_population_share": 0.041835893994497816,
+      "entrepreneur_wealth_share": 0.05146705942872429,
+      "entrepreneur_share_top1": 0.02163234862383121,
+      "wealth_top1_share": 0.357119495739761
+    },
+    {
+      "implicate": 1,
+      "definition_id": "business_majority_without_pension_withdrawals",
+      "entrepreneur_population_share": 0.0666213819036304,
+      "entrepreneur_wealth_share": 0.24989333168234645,
+      "entrepreneur_share_top1": 0.40329022483424276,
+      "wealth_top1_share": 0.357119495739761
+    },
+    {
+      "implicate": 1,
+      "definition_id": "business_majority_minus1_as_zero",
+      "entrepreneur_population_share": 0.06533350349892342,
+      "entrepreneur_wealth_share": 0.24175503724028372,
+      "entrepreneur_share_top1": 0.3872747079893903,
+      "wealth_top1_share": 0.357119495739761
+    },
+    {
+      "implicate": 2,
+      "definition_id": "active_manager_paper_proxy",
+      "entrepreneur_population_share": 0.1326503205375639,
+      "entrepreneur_wealth_share": 0.4478279208554355,
+      "entrepreneur_share_top1": 0.6519838135123787,
+      "wealth_top1_share": 0.3438137866097
+    },
+    {
+      "implicate": 2,
+      "definition_id": "business_majority_model_flow",
+      "entrepreneur_population_share": 0.06738819397573932,
+      "entrepreneur_wealth_share": 0.2380823742276331,
+      "entrepreneur_share_top1": 0.3912684480177215,
+      "wealth_top1_share": 0.3438137866097
+    },
+    {
+      "implicate": 2,
+      "definition_id": "active_manager_and_business_majority",
+      "entrepreneur_population_share": 0.0404563443356122,
+      "entrepreneur_wealth_share": 0.2056199641272874,
+      "entrepreneur_share_top1": 0.3263212446021247,
+      "wealth_top1_share": 0.3438137866097
+    },
+    {
+      "implicate": 2,
+      "definition_id": "business_majority_total_scf_income",
+      "entrepreneur_population_share": 0.058655188928549123,
+      "entrepreneur_wealth_share": 0.20490045259466674,
+      "entrepreneur_share_top1": 0.3293131238605469,
+      "wealth_top1_share": 0.3438137866097
+    },
+    {
+      "implicate": 2,
+      "definition_id": "sole_prop_farm_only_diagnostic",
+      "entrepreneur_population_share": 0.04364740913113389,
+      "entrepreneur_wealth_share": 0.05452953685082609,
+      "entrepreneur_share_top1": 0.026053360168676015,
+      "wealth_top1_share": 0.3438137866097
+    },
+    {
+      "implicate": 2,
+      "definition_id": "business_majority_without_pension_withdrawals",
+      "entrepreneur_population_share": 0.06903755684853403,
+      "entrepreneur_wealth_share": 0.24960149815437055,
+      "entrepreneur_share_top1": 0.40790681707744303,
+      "wealth_top1_share": 0.3438137866097
+    },
+    {
+      "implicate": 2,
+      "definition_id": "business_majority_minus1_as_zero",
+      "entrepreneur_population_share": 0.06759599289483119,
+      "entrepreneur_wealth_share": 0.23829117030767596,
+      "entrepreneur_share_top1": 0.3912684480177215,
+      "wealth_top1_share": 0.3438137866097
+    },
+    {
+      "implicate": 3,
+      "definition_id": "active_manager_paper_proxy",
+      "entrepreneur_population_share": 0.13125224231565347,
+      "entrepreneur_wealth_share": 0.4556454166086014,
+      "entrepreneur_share_top1": 0.6366515213584563,
+      "wealth_top1_share": 0.3481354489866159
+    },
+    {
+      "implicate": 3,
+      "definition_id": "business_majority_model_flow",
+      "entrepreneur_population_share": 0.06857102571193259,
+      "entrepreneur_wealth_share": 0.24845274856012886,
+      "entrepreneur_share_top1": 0.4339911350448828,
+      "wealth_top1_share": 0.3481354489866159
+    },
+    {
+      "implicate": 3,
+      "definition_id": "active_manager_and_business_majority",
+      "entrepreneur_population_share": 0.04194863667679125,
+      "entrepreneur_wealth_share": 0.21640640647410067,
+      "entrepreneur_share_top1": 0.36757273214701314,
+      "wealth_top1_share": 0.3481354489866159
+    },
+    {
+      "implicate": 3,
+      "definition_id": "business_majority_total_scf_income",
+      "entrepreneur_population_share": 0.05945641130586333,
+      "entrepreneur_wealth_share": 0.2107815222114444,
+      "entrepreneur_share_top1": 0.3802355716472478,
+      "wealth_top1_share": 0.3481354489866159
+    },
+    {
+      "implicate": 3,
+      "definition_id": "sole_prop_farm_only_diagnostic",
+      "entrepreneur_population_share": 0.04208687710135957,
+      "entrepreneur_wealth_share": 0.05356253350792512,
+      "entrepreneur_share_top1": 0.034208538809443294,
+      "wealth_top1_share": 0.3481354489866159
+    },
+    {
+      "implicate": 3,
+      "definition_id": "business_majority_without_pension_withdrawals",
+      "entrepreneur_population_share": 0.06971196439300982,
+      "entrepreneur_wealth_share": 0.25764571245590495,
+      "entrepreneur_share_top1": 0.4511339855729577,
+      "wealth_top1_share": 0.3481354489866159
+    },
+    {
+      "implicate": 3,
+      "definition_id": "business_majority_minus1_as_zero",
+      "entrepreneur_population_share": 0.06857102571193259,
+      "entrepreneur_wealth_share": 0.24845274856012886,
+      "entrepreneur_share_top1": 0.4339911350448828,
+      "wealth_top1_share": 0.3481354489866159
+    },
+    {
+      "implicate": 4,
+      "definition_id": "active_manager_paper_proxy",
+      "entrepreneur_population_share": 0.1308271661950412,
+      "entrepreneur_wealth_share": 0.45020261847284304,
+      "entrepreneur_share_top1": 0.656814289699086,
+      "wealth_top1_share": 0.3508161857231411
+    },
+    {
+      "implicate": 4,
+      "definition_id": "business_majority_model_flow",
+      "entrepreneur_population_share": 0.06666853402945315,
+      "entrepreneur_wealth_share": 0.248390473988784,
+      "entrepreneur_share_top1": 0.3827774363819289,
+      "wealth_top1_share": 0.3508161857231411
+    },
+    {
+      "implicate": 4,
+      "definition_id": "active_manager_and_business_majority",
+      "entrepreneur_population_share": 0.03962196496163302,
+      "entrepreneur_wealth_share": 0.2156059673817218,
+      "entrepreneur_share_top1": 0.3210982298387948,
+      "wealth_top1_share": 0.3508161857231411
+    },
+    {
+      "implicate": 4,
+      "definition_id": "business_majority_total_scf_income",
+      "entrepreneur_population_share": 0.05835489253441096,
+      "entrepreneur_wealth_share": 0.20312597803161367,
+      "entrepreneur_share_top1": 0.32672854176922905,
+      "wealth_top1_share": 0.3508161857231411
+    },
+    {
+      "implicate": 4,
+      "definition_id": "sole_prop_farm_only_diagnostic",
+      "entrepreneur_population_share": 0.04203458519948934,
+      "entrepreneur_wealth_share": 0.05727491664381652,
+      "entrepreneur_share_top1": 0.03807345318309682,
+      "wealth_top1_share": 0.3508161857231411
+    },
+    {
+      "implicate": 4,
+      "definition_id": "business_majority_without_pension_withdrawals",
+      "entrepreneur_population_share": 0.06813654336113,
+      "entrepreneur_wealth_share": 0.2598897879376021,
+      "entrepreneur_share_top1": 0.40066516736471836,
+      "wealth_top1_share": 0.3508161857231411
+    },
+    {
+      "implicate": 4,
+      "definition_id": "business_majority_minus1_as_zero",
+      "entrepreneur_population_share": 0.06666853402945315,
+      "entrepreneur_wealth_share": 0.248390473988784,
+      "entrepreneur_share_top1": 0.3827774363819289,
+      "wealth_top1_share": 0.3508161857231411
+    },
+    {
+      "implicate": 5,
+      "definition_id": "active_manager_paper_proxy",
+      "entrepreneur_population_share": 0.130141170496908,
+      "entrepreneur_wealth_share": 0.4457576214386088,
+      "entrepreneur_share_top1": 0.6400996047717024,
+      "wealth_top1_share": 0.35507613803253707
+    },
+    {
+      "implicate": 5,
+      "definition_id": "business_majority_model_flow",
+      "entrepreneur_population_share": 0.06763745210688028,
+      "entrepreneur_wealth_share": 0.2398265618431778,
+      "entrepreneur_share_top1": 0.3930224958492567,
+      "wealth_top1_share": 0.35507613803253707
+    },
+    {
+      "implicate": 5,
+      "definition_id": "active_manager_and_business_majority",
+      "entrepreneur_population_share": 0.040223550630876403,
+      "entrepreneur_wealth_share": 0.20795055798136422,
+      "entrepreneur_share_top1": 0.3356491307130486,
+      "wealth_top1_share": 0.35507613803253707
+    },
+    {
+      "implicate": 5,
+      "definition_id": "business_majority_total_scf_income",
+      "entrepreneur_population_share": 0.05874235059578249,
+      "entrepreneur_wealth_share": 0.2046899967891343,
+      "entrepreneur_share_top1": 0.35105843081062277,
+      "wealth_top1_share": 0.35507613803253707
+    },
+    {
+      "implicate": 5,
+      "definition_id": "sole_prop_farm_only_diagnostic",
+      "entrepreneur_population_share": 0.042561260083311146,
+      "entrepreneur_wealth_share": 0.05232054649642639,
+      "entrepreneur_share_top1": 0.051320524217016675,
+      "wealth_top1_share": 0.35507613803253707
+    },
+    {
+      "implicate": 5,
+      "definition_id": "business_majority_without_pension_withdrawals",
+      "entrepreneur_population_share": 0.06926946054751157,
+      "entrepreneur_wealth_share": 0.24911619767498402,
+      "entrepreneur_share_top1": 0.40758355051172424,
+      "wealth_top1_share": 0.35507613803253707
+    },
+    {
+      "implicate": 5,
+      "definition_id": "business_majority_minus1_as_zero",
+      "entrepreneur_population_share": 0.06763745210688028,
+      "entrepreneur_wealth_share": 0.2398265618431778,
+      "entrepreneur_share_top1": 0.3930224958492567,
+      "wealth_top1_share": 0.35507613803253707
+    }
+  ]
+}

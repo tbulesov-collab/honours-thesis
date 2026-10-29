@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "key": "8a77340b829d",
+  "tau_w": 0.07,
+  "tau_k": 0.0,
+  "tau_bq": 0.4,
+  "tau_l": 0.06276659778851901,
+  "psi": 0.937233402211481,
+  "ce2_newborn": 4.990430509493926,
+  "ce2_population": -0.7204624458725495,
+  "ce1_newborn": 7.6558370849354125,
+  "output_growth": -2.5203170358247373,
+  "consumption_growth": 1.0798159537148244,
+  "top1_wealth_share": 0.48761460005322743,
+  "revenue": 0.2056605284948728,
+  "revenue_gap": 1.4091866594567737e-05,
+  "revenue_relative_gap": 6.852473023901635e-05,
+  "elapsed_seconds": 898.8854036249686,
+  "result_directory": "calibration/runs/subsidy_cap_grid_2022/8a77340b829d/Joint_Tax"
+}

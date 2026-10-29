@@ -1,0 +1,3 @@
+# Preserve numerical/source hashes exactly; do not normalize saved evidence.
+* -text
+*.pdf binary

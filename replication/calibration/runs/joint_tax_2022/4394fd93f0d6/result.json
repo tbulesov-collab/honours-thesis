@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "key": "4394fd93f0d6",
+  "tau_w": 0.04636340971619336,
+  "tau_k": -0.28628977406860723,
+  "tau_bq": 0.015160195688225388,
+  "tau_l": 0.14990506924970037,
+  "psi": 0.8500949307502996,
+  "ce2_newborn": 18.948065757376508,
+  "ce2_population": 9.740701095199423,
+  "ce1_newborn": 17.13548329869598,
+  "output_growth": 16.840009827017454,
+  "consumption_growth": 18.317762103904723,
+  "top1_wealth_share": 0.5520380932381761,
+  "revenue": 0.20565258866314415,
+  "revenue_gap": 6.152034865924971e-06,
+  "revenue_relative_gap": 2.9915591861410407e-05,
+  "elapsed_seconds": 955.9437267920002,
+  "result_directory": "calibration/runs/joint_tax_2022/4394fd93f0d6/Joint_Tax"
+}

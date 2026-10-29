@@ -1,0 +1,14 @@
+{
+  "cache_version": "entrepreneur-income-share-parentheses-v2",
+  "parameters": {
+    "sigma_z_eps": 0.29200000000000004,
+    "x_hi": 1.5,
+    "p1_x": 0.05,
+    "p2_x": 0.03
+  },
+  "moments": [
+    0.38804539842845787,
+    0.6052219963612199,
+    0.329191098240687
+  ]
+}

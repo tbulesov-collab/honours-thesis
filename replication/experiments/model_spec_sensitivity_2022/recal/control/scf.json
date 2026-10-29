@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "sigma_z_eps": 0.27523746083384343,
+    "x_hi": 1.3940944684608445,
+    "p1_x": 0.0496167093137133,
+    "p2_x": 0.03447848012049787
+  },
+  "moments": {
+    "top1": 0.33936762237561946,
+    "ent_top1": 0.5797134834903848,
+    "ent_wealth": 0.3452446323543154,
+    "ent_pop": 0.06838263713767571,
+    "top01": 0.19546051684249163,
+    "debt_output": 1.473921599022461
+  },
+  "targets": [
+    0.36,
+    0.6444688368794141,
+    0.4496170458164325
+  ],
+  "objective": 155.12551490880244,
+  "path": [
+    {
+      "step": "published vector",
+      "objective": 207.4329415903075
+    },
+    {
+      "step": "iteration 1, 1 step",
+      "objective": 155.12551490880244
+    }
+  ],
+  "run_directory": "experiments/model_spec_sensitivity_2022/recal/control/solves/8a7b93275898"
+}

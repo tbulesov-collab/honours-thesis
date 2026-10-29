@@ -1,0 +1,9 @@
+{
+  "separate_wealth": "calibration/runs/theta_max_robustness_2022/financing/v2_bf8c109fc300/15d6fe146f961036_c0817307",
+  "separate_subsidy": "calibration/runs/theta_max_robustness_2022/financing/v2_4c477e22cbc6/72530e11b66db37a_5c8dd35c",
+  "joint_estate_40": "experiments/three_tax_2022/runs/estate/v2_fecede9519f7/0f17cb8e58562d19_8148a55d",
+  "joint_estate_zero": "experiments/policy_reoptimization_2022/runs/thesis/v2_fecede9519f7/54b48c5df64e6d40_35be0941",
+  "joint_subsidy_80": "experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/d897e64637565c79_0d5d0f96",
+  "joint_subsidy_95": "experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/b29768ab5f73dab8_daaff08f",
+  "joint_subsidy_95_w10": "experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/2099fc18711dc078_1edd2ec7"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "key": "1a6fcdc2a8e9",
+  "tau_w": 0.045361607228406424,
+  "tau_k": -0.5086339364687333,
+  "tau_bq": 0.4000000000852377,
+  "returncode": 1,
+  "elapsed_seconds": 34.29981395800132,
+  "log": "calibration/runs/joint_wealth_capital_2022_extended/1a6fcdc2a8e9/run.log"
+}

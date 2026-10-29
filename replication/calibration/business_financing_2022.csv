@@ -1,0 +1,7 @@
+component,year,value,unit,transformation,source_url,series_or_table
+nonfinancial_business_total_liabilities,2022,40065.223,billion_USD,end_of_year,https://fred.stlouisfed.org/series/BOGZ1FL144190005Q,FL144190005
+nonfinancial_stock_issuance,2022,32.760,billion_USD,annual_gross_flow,https://www.federalreserve.gov/data/corpsecure/corpsecure20231231.htm,Table_1.46_line_9
+capitalization_rate,2022,0.05,decimal,paper_assumption,NA,footnote_25
+capitalized_external_funds,2022,655.200,billion_USD,stock_issuance_divided_by_0.05,derived,derived
+nominal_GDP,2022,26054.614,billion_USD,annual,https://fred.stlouisfed.org/series/GDPA,GDPA
+business_financing_to_GDP,2022,1.5628872107,ratio,(liabilities+capitalized_external_funds)/GDP,derived,calibration_target

@@ -1,0 +1,30 @@
+{
+  "context_id": "f95075cbed031ffd69389ba5120072ce53d41d7a7bd49b0996b73e66515ce724",
+  "rates": [
+    0.09,
+    -0.95,
+    0.0
+  ],
+  "environment": {
+    "GKK_DBN_MAX_ITER": "2000",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.27830776649078415",
+    "GKK_X_HI": "1.4620688061231504",
+    "GKK_P1_X": "0.0502979531819958",
+    "GKK_P2_X": "0.032874368735997382",
+    "GKK_THETA_MAX": "2.9521292419330263",
+    "OMP_NUM_THREADS": "4",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "GKK_JOINT_BUDGET_TOL": "0.0001",
+    "GKK_JOINT_FULL_OUTPUT": "0",
+    "GKK_JOINT_FIXED_LABOR": "0",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_RESULT_FOLDER": "experiments/grid_accuracy_2022/runs/na301/policies_extended/v2_f95075cbed03/4fd70e5e5f7d4a22_f0187664",
+    "GKK_JOINT_TAUW": "0.089999999999999997",
+    "GKK_JOINT_TAUK": "-0.94999999999999996",
+    "GKK_JOINT_TAUBQ": "0"
+  }
+}

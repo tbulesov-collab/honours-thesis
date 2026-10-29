@@ -1,0 +1,30 @@
+{
+  "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+  "rates": [
+    0.07,
+    0.0,
+    0.0
+  ],
+  "environment": {
+    "GKK_DBN_MAX_ITER": "2000",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.27830776649078415",
+    "GKK_X_HI": "1.4620688061231504",
+    "GKK_P1_X": "0.0502979531819958",
+    "GKK_P2_X": "0.032874368735997382",
+    "GKK_THETA_MAX": "2.9521292419330263",
+    "OMP_NUM_THREADS": "4",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "GKK_JOINT_BUDGET_TOL": "0.0001",
+    "GKK_JOINT_FULL_OUTPUT": "0",
+    "GKK_JOINT_FIXED_LABOR": "0",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_RESULT_FOLDER": "experiments/policy_reoptimization_2022/runs/thesis/v2_fecede9519f7/3962ceaedc7b207a_14473605",
+    "GKK_JOINT_TAUW": "0.070000000000000007",
+    "GKK_JOINT_TAUK": "0",
+    "GKK_JOINT_TAUBQ": "0"
+  }
+}

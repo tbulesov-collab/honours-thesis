@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "key": "d15147cbf1e4",
+  "tau_w": 0.04774383559301344,
+  "tau_k": -0.11897293264762676,
+  "tau_bq": 0.17598034369124493,
+  "tau_l": 0.22399999999999998,
+  "psi": 0.776,
+  "ce2_newborn": -0.6749261753991265,
+  "ce2_population": -4.08068534523861,
+  "ce1_newborn": 0.21196568621462616,
+  "output_growth": 5.820082715835273,
+  "consumption_growth": 1.2188512400755247,
+  "top1_wealth_share": 0.5368638360429578,
+  "revenue": 0.2710616152531091,
+  "revenue_gap": 0.0654151786248309,
+  "revenue_relative_gap": 0.31809536648122855,
+  "elapsed_seconds": 526.5523204580022,
+  "result_directory": "experiments/joint_tax_fixed_labor/results/d15147cbf1e4/Joint_Tax_Fixed_Labor"
+}

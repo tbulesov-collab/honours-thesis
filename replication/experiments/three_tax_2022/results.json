@@ -1,0 +1,509 @@
+{
+  "estate_series": [
+    {
+      "calibration": "thesis",
+      "group": "grid_bq0",
+      "rates": [
+        0.07,
+        -0.5,
+        0.0
+      ],
+      "status": "ok",
+      "schema": 2,
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "key": "54b48c5df64e6d40",
+      "tau_w": 0.07,
+      "tau_k": -0.5,
+      "tau_bq": 0.0,
+      "tau_l": 0.11092787923106373,
+      "psi": 0.8890721207689363,
+      "ce2_newborn": 23.53851786470429,
+      "ce2_population": 11.74063683804265,
+      "ce1_newborn": 22.547173945958782,
+      "output_growth": 19.357619504743194,
+      "consumption_growth": 21.74466573116689,
+      "top1_wealth_share": 0.60145905050361,
+      "revenue": 0.2056625133137475,
+      "revenue_gap": 1.6076685469268437e-05,
+      "revenue_relative_gap": 7.817633863662946e-05,
+      "equilibrium_converged": true,
+      "equilibrium_residual": 2.4358756328191414e-09,
+      "aggregate_residual": 7.958628965592095e-07,
+      "elapsed_seconds": 3618.627319207997,
+      "result_directory": "experiments/policy_reoptimization_2022/runs/thesis/v2_fecede9519f7/54b48c5df64e6d40_35be0941/Joint_Tax",
+      "feasible": true,
+      "output_sha256": "487844d75262c8de5eb1aa03e008600cffbab22d5b0008e2c6f42e6a58a13bd3",
+      "source": "reoptimisation grid (same context)"
+    },
+    {
+      "group": "estate",
+      "rates": [
+        0.07,
+        -0.5,
+        0.1
+      ],
+      "status": "ok",
+      "schema": 2,
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "key": "545cdbe683cf8c3c",
+      "tau_w": 0.07,
+      "tau_k": -0.5,
+      "tau_bq": 0.1,
+      "tau_l": 0.11148354591298615,
+      "psi": 0.8885164540870139,
+      "ce2_newborn": 22.71006211847224,
+      "ce2_population": 11.42072718272107,
+      "ce1_newborn": 22.225528660025176,
+      "output_growth": 18.734050915574272,
+      "consumption_growth": 21.252031359278266,
+      "top1_wealth_share": 0.5935063942156458,
+      "revenue": 0.2056639888676543,
+      "revenue_gap": 1.7552239376078527e-05,
+      "revenue_relative_gap": 8.535153666584339e-05,
+      "equilibrium_converged": true,
+      "equilibrium_residual": 2.6617432422656323e-09,
+      "aggregate_residual": 9.018456151155962e-07,
+      "elapsed_seconds": 3430.330487291969,
+      "result_directory": "experiments/three_tax_2022/runs/estate/v2_fecede9519f7/545cdbe683cf8c3c_2ad5c2e6/Joint_Tax",
+      "feasible": true,
+      "output_sha256": "c6b34a5d998fbb574ea06fd0769c781c61bacb216716c39fa6d8b059ccca9f27"
+    },
+    {
+      "group": "estate",
+      "rates": [
+        0.07,
+        -0.5,
+        0.2
+      ],
+      "status": "ok",
+      "schema": 2,
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "key": "c82f6bfd27d9150d",
+      "tau_w": 0.07,
+      "tau_k": -0.5,
+      "tau_bq": 0.2,
+      "tau_l": 0.11213715195880047,
+      "psi": 0.8878628480411995,
+      "ce2_newborn": 21.839289978191935,
+      "ce2_population": 11.08249899342395,
+      "ce1_newborn": 21.88649689299584,
+      "output_growth": 18.089983337993388,
+      "consumption_growth": 20.735928878278532,
+      "top1_wealth_share": 0.5852208061518182,
+      "revenue": 0.2056663054969236,
+      "revenue_gap": 1.9868868645384063e-05,
+      "revenue_relative_gap": 9.661664442695194e-05,
+      "equilibrium_converged": true,
+      "equilibrium_residual": 2.1165076766931426e-09,
+      "aggregate_residual": 7.774809188068722e-07,
+      "elapsed_seconds": 3352.6210105830105,
+      "result_directory": "experiments/three_tax_2022/runs/estate/v2_fecede9519f7/c82f6bfd27d9150d_120a649f/Joint_Tax",
+      "feasible": true,
+      "output_sha256": "4c90892ed9e4edc5c3ea7a4d3f402534dcf20a5f7a955526632148eb69ac94ad"
+    },
+    {
+      "group": "estate",
+      "rates": [
+        0.07,
+        -0.5,
+        0.3
+      ],
+      "status": "ok",
+      "schema": 2,
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "key": "e1fc775f8ab7a2ee",
+      "tau_w": 0.07,
+      "tau_k": -0.5,
+      "tau_bq": 0.3,
+      "tau_l": 0.1128851894441506,
+      "psi": 0.8871148105558494,
+      "ce2_newborn": 20.89322195478416,
+      "ce2_population": 10.719687004243639,
+      "ce1_newborn": 21.535106399435552,
+      "output_growth": 17.41739131130844,
+      "consumption_growth": 20.187287883625203,
+      "top1_wealth_share": 0.5763905432474836,
+      "revenue": 0.205651701766448,
+      "revenue_gap": 5.265138169785466e-06,
+      "revenue_relative_gap": 2.560286604577841e-05,
+      "equilibrium_converged": true,
+      "equilibrium_residual": 1.7637833690862907e-09,
+      "aggregate_residual": 8.253236359444271e-07,
+      "elapsed_seconds": 3216.2990062909666,
+      "result_directory": "experiments/three_tax_2022/runs/estate/v2_fecede9519f7/e1fc775f8ab7a2ee_f138ee14/Joint_Tax",
+      "feasible": true,
+      "output_sha256": "153f65f704655229ae95beb2d38dd0a88dc6d3de661058a10d1bd9708d6dfde0"
+    },
+    {
+      "group": "estate",
+      "rates": [
+        0.07,
+        -0.5,
+        0.4
+      ],
+      "status": "ok",
+      "schema": 2,
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "key": "0f17cb8e58562d19",
+      "tau_w": 0.07,
+      "tau_k": -0.5,
+      "tau_bq": 0.4,
+      "tau_l": 0.11372518103210272,
+      "psi": 0.8862748189678973,
+      "ce2_newborn": 19.864961301397123,
+      "ce2_population": 10.33354237224382,
+      "ce1_newborn": 21.170749840985764,
+      "output_growth": 16.719741649050768,
+      "consumption_growth": 19.608442344128218,
+      "top1_wealth_share": 0.5670894395861192,
+      "revenue": 0.2056529554707523,
+      "revenue_gap": 6.518842474073638e-06,
+      "revenue_relative_gap": 3.1699272698106354e-05,
+      "equilibrium_converged": true,
+      "equilibrium_residual": 1.545202691982054e-09,
+      "aggregate_residual": 7.259214398463886e-07,
+      "elapsed_seconds": 3107.2825692080078,
+      "result_directory": "experiments/three_tax_2022/runs/estate/v2_fecede9519f7/0f17cb8e58562d19_8148a55d/Joint_Tax",
+      "feasible": true,
+      "output_sha256": "402fee6cb269daf24827b016df404f704417ca7a3606fb798d5fbc8e7df1f925"
+    }
+  ],
+  "estate_runs": [
+    {
+      "group": "estate",
+      "rates": [
+        0.07,
+        -0.5,
+        0.1
+      ],
+      "status": "ok",
+      "schema": 2,
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "key": "545cdbe683cf8c3c",
+      "tau_w": 0.07,
+      "tau_k": -0.5,
+      "tau_bq": 0.1,
+      "tau_l": 0.11148354591298615,
+      "psi": 0.8885164540870139,
+      "ce2_newborn": 22.71006211847224,
+      "ce2_population": 11.42072718272107,
+      "ce1_newborn": 22.225528660025176,
+      "output_growth": 18.734050915574272,
+      "consumption_growth": 21.252031359278266,
+      "top1_wealth_share": 0.5935063942156458,
+      "revenue": 0.2056639888676543,
+      "revenue_gap": 1.7552239376078527e-05,
+      "revenue_relative_gap": 8.535153666584339e-05,
+      "equilibrium_converged": true,
+      "equilibrium_residual": 2.6617432422656323e-09,
+      "aggregate_residual": 9.018456151155962e-07,
+      "elapsed_seconds": 3430.330487291969,
+      "result_directory": "experiments/three_tax_2022/runs/estate/v2_fecede9519f7/545cdbe683cf8c3c_2ad5c2e6/Joint_Tax",
+      "feasible": true,
+      "output_sha256": "c6b34a5d998fbb574ea06fd0769c781c61bacb216716c39fa6d8b059ccca9f27"
+    },
+    {
+      "group": "estate",
+      "rates": [
+        0.07,
+        -0.5,
+        0.2
+      ],
+      "status": "ok",
+      "schema": 2,
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "key": "c82f6bfd27d9150d",
+      "tau_w": 0.07,
+      "tau_k": -0.5,
+      "tau_bq": 0.2,
+      "tau_l": 0.11213715195880047,
+      "psi": 0.8878628480411995,
+      "ce2_newborn": 21.839289978191935,
+      "ce2_population": 11.08249899342395,
+      "ce1_newborn": 21.88649689299584,
+      "output_growth": 18.089983337993388,
+      "consumption_growth": 20.735928878278532,
+      "top1_wealth_share": 0.5852208061518182,
+      "revenue": 0.2056663054969236,
+      "revenue_gap": 1.9868868645384063e-05,
+      "revenue_relative_gap": 9.661664442695194e-05,
+      "equilibrium_converged": true,
+      "equilibrium_residual": 2.1165076766931426e-09,
+      "aggregate_residual": 7.774809188068722e-07,
+      "elapsed_seconds": 3352.6210105830105,
+      "result_directory": "experiments/three_tax_2022/runs/estate/v2_fecede9519f7/c82f6bfd27d9150d_120a649f/Joint_Tax",
+      "feasible": true,
+      "output_sha256": "4c90892ed9e4edc5c3ea7a4d3f402534dcf20a5f7a955526632148eb69ac94ad"
+    },
+    {
+      "group": "estate",
+      "rates": [
+        0.07,
+        -0.5,
+        0.3
+      ],
+      "status": "ok",
+      "schema": 2,
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "key": "e1fc775f8ab7a2ee",
+      "tau_w": 0.07,
+      "tau_k": -0.5,
+      "tau_bq": 0.3,
+      "tau_l": 0.1128851894441506,
+      "psi": 0.8871148105558494,
+      "ce2_newborn": 20.89322195478416,
+      "ce2_population": 10.719687004243639,
+      "ce1_newborn": 21.535106399435552,
+      "output_growth": 17.41739131130844,
+      "consumption_growth": 20.187287883625203,
+      "top1_wealth_share": 0.5763905432474836,
+      "revenue": 0.205651701766448,
+      "revenue_gap": 5.265138169785466e-06,
+      "revenue_relative_gap": 2.560286604577841e-05,
+      "equilibrium_converged": true,
+      "equilibrium_residual": 1.7637833690862907e-09,
+      "aggregate_residual": 8.253236359444271e-07,
+      "elapsed_seconds": 3216.2990062909666,
+      "result_directory": "experiments/three_tax_2022/runs/estate/v2_fecede9519f7/e1fc775f8ab7a2ee_f138ee14/Joint_Tax",
+      "feasible": true,
+      "output_sha256": "153f65f704655229ae95beb2d38dd0a88dc6d3de661058a10d1bd9708d6dfde0"
+    },
+    {
+      "group": "estate",
+      "rates": [
+        0.07,
+        -0.5,
+        0.4
+      ],
+      "status": "ok",
+      "schema": 2,
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "key": "0f17cb8e58562d19",
+      "tau_w": 0.07,
+      "tau_k": -0.5,
+      "tau_bq": 0.4,
+      "tau_l": 0.11372518103210272,
+      "psi": 0.8862748189678973,
+      "ce2_newborn": 19.864961301397123,
+      "ce2_population": 10.33354237224382,
+      "ce1_newborn": 21.170749840985764,
+      "output_growth": 16.719741649050768,
+      "consumption_growth": 19.608442344128218,
+      "top1_wealth_share": 0.5670894395861192,
+      "revenue": 0.2056529554707523,
+      "revenue_gap": 6.518842474073638e-06,
+      "revenue_relative_gap": 3.1699272698106354e-05,
+      "equilibrium_converged": true,
+      "equilibrium_residual": 1.545202691982054e-09,
+      "aggregate_residual": 7.259214398463886e-07,
+      "elapsed_seconds": 3107.2825692080078,
+      "result_directory": "experiments/three_tax_2022/runs/estate/v2_fecede9519f7/0f17cb8e58562d19_8148a55d/Joint_Tax",
+      "feasible": true,
+      "output_sha256": "402fee6cb269daf24827b016df404f704417ca7a3606fb798d5fbc8e7df1f925"
+    }
+  ],
+  "decomposition": {
+    "7.000/-50/40": {
+      "rates": [
+        0.07,
+        -0.5,
+        0.4
+      ],
+      "ce2_newborn": 19.864961301397077,
+      "decomposition": {
+        "CE1": {
+          "total": [
+            20.355116461114076,
+            7.345254618641466
+          ],
+          "c": [
+            19.16090445869554,
+            8.346729535089096
+          ],
+          "h": [
+            0.9838473217178421,
+            -0.9174531352659588
+          ],
+          "b": [
+            -0.008636922843408482,
+            -0.060798151594119186
+          ],
+          "ch": [
+            20.36493840816026,
+            7.403673687218262
+          ],
+          "cl": [
+            19.60844234413024,
+            19.60844234413024
+          ],
+          "cd": [
+            -0.3741691444714812,
+            -9.415483211995701
+          ],
+          "hl": [
+            -3.2312568432719013,
+            -3.2312568432719013
+          ],
+          "hd": [
+            4.3558529619041275,
+            2.391065164769657
+          ],
+          "chl": [
+            15.743586365754613,
+            15.743586365754613
+          ],
+          "chd": [
+            3.9927499980879855,
+            -7.205507398208555
+          ]
+        },
+        "CE2": {
+          "total": [
+            19.864961301397077,
+            10.333542372243798
+          ],
+          "c": [
+            18.481985900163988,
+            10.599026299375215
+          ],
+          "h": [
+            1.172862493404092,
+            -0.22217391643445383
+          ],
+          "b": [
+            -0.005552083983617617,
+            -0.017907700202457466
+          ],
+          "ch": [
+            19.871616674227344,
+            10.353304111107509
+          ],
+          "cl": [
+            19.60844234413024,
+            19.60844234413024
+          ],
+          "cd": [
+            -0.9417867350243414,
+            -7.532424859136344
+          ],
+          "hl": [
+            -3.2312568432719013,
+            -3.2312568432719013
+          ],
+          "hd": [
+            4.551179640251202,
+            3.109560823750601
+          ],
+          "chl": [
+            15.743586365754613,
+            15.743586365754613
+          ],
+          "chd": [
+            3.566530499087861,
+            -4.657089367883927
+          ]
+        }
+      },
+      "file": "experiments/three_tax_2022/runs/decomp/v2_fecede9519f7/0f17cb8e58562d19_b8f0194d/Joint_Tax/CE_Decomposition.txt"
+    },
+    "7.000/-50/0": {
+      "rates": [
+        0.07,
+        -0.5,
+        0.0
+      ],
+      "ce2_newborn": 23.53851786470422,
+      "decomposition": {
+        "CE1": {
+          "c": [
+            21.092981396259052,
+            8.833766457725782
+          ],
+          "h": [
+            1.2132106890064205,
+            -0.8281453559082268
+          ],
+          "ch": [
+            22.59816832272855,
+            8.008788648661877
+          ],
+          "cl": [
+            21.74466573114271,
+            21.74466573114271
+          ],
+          "cd": [
+            -0.5352877934897027,
+            -10.604899357092968
+          ],
+          "hl": [
+            -3.1847143221575003,
+            -3.1847143221575003
+          ],
+          "hd": [
+            4.542593641460946,
+            2.4340877060373245
+          ],
+          "chl": [
+            17.867445925140224,
+            17.867445925140224
+          ],
+          "chd": [
+            4.013595408347848,
+            -8.36419012823928
+          ]
+        },
+        "CE2": {
+          "total": [
+            23.53851786470422,
+            11.740636838042562
+          ],
+          "c": [
+            21.887293650733607,
+            11.847405684977307
+          ],
+          "h": [
+            1.3578419201817349,
+            -0.09310968935524189
+          ],
+          "b": [
+            -0.003086030983157073,
+            -0.0023518866677285644
+          ],
+          "ch": [
+            23.542330419298274,
+            11.743264912992114
+          ],
+          "cl": [
+            21.74466573114271,
+            21.74466573114271
+          ],
+          "cd": [
+            0.117153321448904,
+            -8.129522543535684
+          ],
+          "hl": [
+            -3.1847143221575003,
+            -3.1847143221575003
+          ],
+          "hd": [
+            4.691982480385182,
+            3.1933021848323806
+          ],
+          "chl": [
+            17.867445925140224,
+            17.867445925140224
+          ],
+          "chd": [
+            4.8146326151516705,
+            -5.19582057970247
+          ]
+        }
+      },
+      "file": "experiments/three_tax_2022/runs/decomp/v2_fecede9519f7/54b48c5df64e6d40_f7decc9f/Joint_Tax/CE_Decomposition.txt"
+    }
+  },
+  "checks": [
+    "estate 40% here 19.8650 vs headline s5_4 19.8650",
+    "newborn CE2 falls monotonically with the estate tax: yes"
+  ]
+}

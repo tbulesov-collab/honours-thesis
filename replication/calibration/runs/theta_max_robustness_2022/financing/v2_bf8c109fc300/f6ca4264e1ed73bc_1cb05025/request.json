@@ -1,0 +1,30 @@
+{
+  "context_id": "bf8c109fc300278d8812b0ab50f52d5a075885dff753eea713ec2a2974350139",
+  "rates": [
+    0.0,
+    0.25,
+    0.4
+  ],
+  "environment": {
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.27830776649078415",
+    "GKK_X_HI": "1.4620688061231504",
+    "GKK_P1_X": "0.0502979531819958",
+    "GKK_P2_X": "0.032874368735997382",
+    "GKK_THETA_MAX": "2.9521292419330263",
+    "OMP_NUM_THREADS": "4",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "GKK_JOINT_BUDGET_TOL": "0.0001",
+    "GKK_JOINT_FULL_OUTPUT": "0",
+    "GKK_JOINT_FIXED_LABOR": "0",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_DBN_MAX_ITER": "700",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_RESULT_FOLDER": "calibration/runs/theta_max_robustness_2022/financing/v2_bf8c109fc300/f6ca4264e1ed73bc_1cb05025",
+    "GKK_JOINT_TAUW": "0",
+    "GKK_JOINT_TAUK": "0.25",
+    "GKK_JOINT_TAUBQ": "0.40000000000000002"
+  }
+}

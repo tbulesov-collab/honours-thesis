@@ -1,0 +1,30 @@
+{
+  "context_id": "bf1c556574d7876a1fc739065f3b4bc38d6afcdaa4314bea7ed02e71825a7ba4",
+  "rates": [
+    0.07,
+    -0.5,
+    0.0
+  ],
+  "environment": {
+    "GKK_DBN_MAX_ITER": "2000",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.27830776649078415",
+    "GKK_X_HI": "1.4620688061231504",
+    "GKK_P1_X": "0.0502979531819958",
+    "GKK_P2_X": "0.032874368735997382",
+    "GKK_THETA_MAX": "2.7999999999999998",
+    "OMP_NUM_THREADS": "4",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "GKK_JOINT_BUDGET_TOL": "0.0001",
+    "GKK_JOINT_FULL_OUTPUT": "0",
+    "GKK_JOINT_FIXED_LABOR": "0",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_RESULT_FOLDER": "experiments/table15_estate_2022/runs/theta_2800/v2_bf1c556574d7/949b5cb9dc83c514_24174354",
+    "GKK_JOINT_TAUW": "0.070000000000000007",
+    "GKK_JOINT_TAUK": "-0.5",
+    "GKK_JOINT_TAUBQ": "0"
+  }
+}

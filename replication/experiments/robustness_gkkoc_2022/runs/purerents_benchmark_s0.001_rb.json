@@ -1,0 +1,23 @@
+{
+  "sigma": 0.001,
+  "build": "rb",
+  "parameters": {
+    "sigma_z_eps": 0.001,
+    "x_hi": 1.4620688061231504,
+    "p1_x": 0.0502979531819958,
+    "p2_x": 0.03287436873599738,
+    "theta_max": 2.9521292419330263
+  },
+  "benchmark": "experiments/robustness_gkkoc_2022/runs/purerents_rb/solves/43083fd0d60f",
+  "moments": {
+    "top1": 0.11124086030754039,
+    "ent_top1": 0.7059456425281231,
+    "ent_wealth": 0.43247905736052866,
+    "ent_pop": 0.1522329164438447,
+    "top01": 0.019339583786838723,
+    "debt_output": 1.4035876647478516
+  },
+  "misallocation": -0.021667156383761377,
+  "zgrid_min": 0.9969512620086183,
+  "zgrid_max": 1.0050378365153052
+}

@@ -1,0 +1,30 @@
+{
+  "context_id": "c8af36e6b4e5d1e1f3e7ac80940cacfc7de7fa8b4ff8dba1c5cdf64ccab800ab",
+  "rates": [
+    0.0,
+    -0.13618034,
+    0.4
+  ],
+  "environment": {
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_DBN_MAX_ITER": "2000",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.25254775585744144",
+    "GKK_X_HI": "1.5636323629118323",
+    "GKK_P1_X": "0.045268157863796218",
+    "GKK_P2_X": "0.033655913312316169",
+    "GKK_THETA_MAX": "2.9576879059053653",
+    "OMP_NUM_THREADS": "3",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "GKK_JOINT_BUDGET_TOL": "0.0001",
+    "GKK_JOINT_FULL_OUTPUT": "0",
+    "GKK_JOINT_FIXED_LABOR": "0",
+    "GKK_RESULT_FOLDER": "experiments/model_spec_sensitivity_2022/flat/plus/policies/v2_c8af36e6b4e5/94cef56cb32cf4c7_a7c6cfb1",
+    "GKK_JOINT_TAUW": "0",
+    "GKK_JOINT_TAUK": "-0.13618034000000001",
+    "GKK_JOINT_TAUBQ": "0.40000000000000002"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "key": "0cd75070c8e7",
+  "tau_w": 6.239075871842914e-05,
+  "tau_k": -0.18544664846467274,
+  "tau_bq": 0.27656513053600307,
+  "returncode": -9,
+  "elapsed_seconds": 0.0009611250000034488,
+  "log": "experiments/joint_tax_fixed_labor/results/0cd75070c8e7/run.log"
+}

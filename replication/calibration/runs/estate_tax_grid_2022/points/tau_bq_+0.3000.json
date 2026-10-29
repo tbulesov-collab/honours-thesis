@@ -1,0 +1,39 @@
+{
+  "point": "tau_bq_+0.3000",
+  "value": 0.3,
+  "rates": [
+    0.030618034,
+    0.0,
+    0.3
+  ],
+  "status": "ok",
+  "result": {
+    "status": "ok",
+    "schema": 2,
+    "context_id": "6ef65c226366a788e659a8aa1259c749e3c3dd98d1439e5b0129681c20518317",
+    "key": "25d3a2545b5efabd",
+    "tau_w": 0.030618034,
+    "tau_k": 0.0,
+    "tau_bq": 0.3,
+    "tau_l": 0.15455364059493093,
+    "psi": 0.8454463594050691,
+    "ce2_newborn": 9.54921231615684,
+    "ce2_population": 4.618898523345782,
+    "ce1_newborn": 9.405833483820885,
+    "output_growth": 6.586957773769764,
+    "consumption_growth": 8.325284578119675,
+    "top1_wealth_share": 0.4548766499002378,
+    "revenue": 0.20565652904780707,
+    "revenue_gap": 1.0092419528845431e-05,
+    "revenue_relative_gap": 4.907655923592908e-05,
+    "equilibrium_converged": true,
+    "equilibrium_residual": 7.167830929494245e-10,
+    "aggregate_residual": 7.542493083093653e-07,
+    "elapsed_seconds": 3103.4287004999933,
+    "result_directory": "calibration/runs/estate_tax_grid_2022/v2_6ef65c226366/25d3a2545b5efabd_0a88455e/Joint_Tax",
+    "feasible": true,
+    "output_sha256": "2527f40f1900ef9266312df4f89259e1c84c321f429092421d7e96e4dda6611f"
+  },
+  "source": "solved",
+  "feasible": true
+}

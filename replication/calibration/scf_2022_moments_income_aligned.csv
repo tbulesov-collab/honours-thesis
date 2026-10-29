@@ -1,0 +1,7 @@
+moment_id,label,scf_2022_value,original_value,role,model_file,model_key,model_scale,definition
+entrepreneur_share_top1,Population share of entrepreneurs in top 1%,0.3984028495853221,0.6500000000000000,target,Entrepreneur_10_50.txt,Top_01_Entrepreneur_50,0.01,"Business income exceeds 50% of BUSSEFARMINC+WAGEINC+INTDIVINC+SSRETINC; top 1% is NWPCTLECAT=12"
+entrepreneur_wealth_share,Wealth share of entrepreneurs,0.2433009358000577,0.4160000000000000,target,Entrepreneur_10_50.txt,Entreprenur_50_A_Share,0.01,"Business-income-majority families' share of weighted aggregate NETWORTH"
+entrepreneur_population_share,Population share of entrepreneurs,0.0671197418634450,0.1150000000000000,validation,output.txt,Pr/BT_Income>50%,0.01,"Business income exceeds 50% of model-comparable SCF income flows"
+wealth_top1_share,Top 1% wealth share,0.3509920092389330,0.3600000000000000,cross-check,output.txt,Wealth_Top_1%,1.0,"Exact weighted top 1% of NETWORTH; original model target comes from Vermeulen rather than SCF"
+wealth_top01_share,Top 0.1% wealth share,0.1467070456762786,0.1500000000000000,validation,output.txt,Wealth_Top_0.1%,1.0,"Exact weighted top 0.1% of NETWORTH"
+wealth_gini,Wealth Gini,0.8297824327662404,0.8200000000000000,validation,,,1.0,"Weighted Gini of NETWORTH; model output does not currently report a wealth Gini"

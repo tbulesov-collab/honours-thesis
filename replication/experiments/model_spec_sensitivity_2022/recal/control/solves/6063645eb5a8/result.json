@@ -1,0 +1,35 @@
+{
+  "arm": "control",
+  "parameters": {
+    "sigma_z_eps": 0.27523746083384343,
+    "x_hi": 1.3940944684608445,
+    "p1_x": 0.0496167093137133,
+    "p2_x": 0.03447848012049787,
+    "theta_max": 2.9949517830394607
+  },
+  "moments": {
+    "top1": 0.3331773022029874,
+    "ent_top1": 0.555417506078004,
+    "ent_wealth": 0.32428752773370034,
+    "ent_pop": 0.06504535002288676,
+    "top01": 0.19362434671173026,
+    "debt_output": 1.5629929940058331
+  },
+  "elapsed_minutes": 16.641730903467398,
+  "environment": {
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_DBN_MAX_ITER": "2000",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_P1_X": "0.0496167093137133",
+    "GKK_P2_X": "0.034478480120497867",
+    "GKK_RESULT_FOLDER": "experiments/model_spec_sensitivity_2022/recal/control/solves/6063645eb5a8/",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.27523746083384343",
+    "GKK_THETA_MAX": "2.9949517830394607",
+    "GKK_X_HI": "1.3940944684608445",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "OMP_NUM_THREADS": "4"
+  }
+}

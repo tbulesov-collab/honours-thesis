@@ -1,0 +1,30 @@
+{
+  "na": 301,
+  "fine_na": 1201,
+  "copied_from": "experiments/grid_accuracy_2022/variants/na301/src",
+  "patch": {
+    "file": "GKK_Main.f90",
+    "old": "(tauK.lt.-0.50_dp).or.(tauK.gt.0.50_dp)",
+    "new": "(tauK.lt.-0.95_dp).or.(tauK.gt.0.50_dp)",
+    "count": 1
+  },
+  "files_changed_vs_grid_build": [
+    "GKK_Main.f90"
+  ],
+  "sources_sha256": {
+    "NRTYPE.F90": "d77fe23f0f0c29d8be409cbf9b4c73c53fc7b784da0d07ada38bdb9373da654c",
+    "NRUTIL.F90": "7dd6a9dac1b108d635d896b68cf1711203418a1cf007bea7fa151f3552dd5d71",
+    "Toolbox.f90": "fbdbc1a402e915804514161026ddb8b3d5cba560d20bcbc12cecf56153d80892",
+    "parameters.f90": "077ae37f34852cd4bb1977465ae0b99e1615cb80eecc20b930e59d28fa7045b0",
+    "global.f90": "45d58422807310611af1b413dd7f62a52ba6916d57a016c1cd68e33e4b23e43a",
+    "programfunctions.f90": "92214a02d340bde04393adb30ee4d5a4f3f65479a181b08b8b5f17f4fdbfc642",
+    "Simulation_Module.f90": "0e72af660a939aa3ddf8bec04069c13fe95ec3300a6675833b1a8c02dd4e80c3",
+    "GKK_Stats.f90": "231d768df0de05890e013eff21bae14e4c133412e7e6613b1fc976dc1604d7be",
+    "Opt_Tax_Parameters.f90": "aacdc73337378f8e26c517251a28a8c6f4848995780a73af12b638e6a1572db8",
+    "Opt_Tax_Functions.f90": "17ac4b71b4682bb78df0bced079c2488f6bf6c6074a786e5bfab4b7dfa03131c",
+    "GKK_Main.f90": "b64c1592434070c886f4d262068462e13c0ca01427033eada5ede81bc832d5db"
+  },
+  "executables_sha256": {
+    "eval.a": "a8ac087de4c5b3ccab6643060fbce63ac06299754c62dbd3babf38b4ae9b3536"
+  }
+}

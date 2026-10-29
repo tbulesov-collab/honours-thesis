@@ -1,0 +1,5 @@
+definition_id,population_share,wealth_share,entrepreneur_share_top1,unweighted_implicate_records,definition
+active_manager_paper_proxy,0.1308788596515059,0.4496170458164325,0.644468836879414,5535,X3104=1; paper-continuity proxy for active business owners
+business_majority_model_flow,0.06711974186344495,0.24330093580005768,0.39840284958532207,3497,BUSSEFARMINC > 50% of BUSSEFARMINC+WAGEINC+INTDIVINC+SSRETINC
+active_manager_and_business_majority,0.04032641254660733,0.2111641739216708,0.33601307694134774,2630,X3104=1 and business income is a majority of model-comparable flows
+business_majority_total_scf_income,0.058498204670858235,0.2050965292136214,0.3435801042103773,2964,BUSSEFARMINC > 50% of Federal Reserve INCOME

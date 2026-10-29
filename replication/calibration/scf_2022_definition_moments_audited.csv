@@ -1,0 +1,8 @@
+definition_id,entrepreneur_population_share,entrepreneur_wealth_share,entrepreneur_share_top1,wealth_top1_share,definition
+active_manager_paper_proxy,0.13087885965104745,0.4496095754504938,0.643887530613409,0.35099221101835076,X3104 == 1; current active private-business management by someone in the family
+business_majority_model_flow,0.06711974186458576,0.24330143917200142,0.3976668446566364,0.35099221101835076,D > 0 and BUSSEFARMINC > 0.5*D; D=BUSSEFARMINC+WAGEINC+INTDIVINC+SSRETINC
+active_manager_and_business_majority,0.04032641254558004,0.21116835150912977,0.33511820071190795,0.35099221101835076,X3104 == 1 AND business_majority_model_flow
+business_majority_total_scf_income,0.05849820467257731,0.20508218249149568,0.34334584375168564,0.35099221101835076,INCOME > 0 and BUSSEFARMINC > 0.5*INCOME
+sole_prop_farm_only_diagnostic,0.04243320510195836,0.05383091858554366,0.0342576450004128,0.35099221101835076,"D > 0 and CPI*X5704 > 0.5*D; removes mixed X5714 from numerator only, including legitimate other-business income"
+business_majority_without_pension_withdrawals,0.06855538141076319,0.25322930558104156,0.4141159490722176,0.35099221101835076,D-PENACCTWD > 0 and BUSSEFARMINC > 0.5*(D-PENACCTWD)
+business_majority_minus1_as_zero,0.06716130164840413,0.24334319838800997,0.3976668446566364,0.35099221101835076,Broad flow proxy with documented raw -1 (nothing) income codes set to zero; other negative income retained

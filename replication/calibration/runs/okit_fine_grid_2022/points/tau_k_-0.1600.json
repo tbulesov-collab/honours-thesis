@@ -1,0 +1,39 @@
+{
+  "point": "tau_k_-0.1600",
+  "value": -0.16,
+  "rates": [
+    0.0,
+    -0.16,
+    0.4
+  ],
+  "status": "ok",
+  "result": {
+    "status": "ok",
+    "schema": 2,
+    "context_id": "6ef65c226366a788e659a8aa1259c749e3c3dd98d1439e5b0129681c20518317",
+    "key": "1705051d6411d87b",
+    "tau_w": 0.0,
+    "tau_k": -0.16,
+    "tau_bq": 0.4,
+    "tau_l": 0.3178980018448233,
+    "psi": 0.6821019981551767,
+    "ce2_newborn": 5.062238776226247,
+    "ce2_population": 4.483260360463004,
+    "ce1_newborn": 4.066222739322839,
+    "output_growth": 16.281656409814026,
+    "consumption_growth": 14.372074035223736,
+    "top1_wealth_share": 0.4712705846408375,
+    "revenue": 0.2056353366768558,
+    "revenue_gap": -1.1099951422427479e-05,
+    "revenue_relative_gap": 5.3975899628601375e-05,
+    "equilibrium_converged": true,
+    "equilibrium_residual": 7.426438103797645e-10,
+    "aggregate_residual": 7.769525844161016e-07,
+    "elapsed_seconds": 3769.351078000036,
+    "result_directory": "calibration/runs/okit_fine_grid_2022/v2_6ef65c226366/1705051d6411d87b_1c7c59ad/Joint_Tax",
+    "feasible": true,
+    "output_sha256": "ce2e2c3f396e06c0df0eb6c2d4a2301be59db98bc4256bdadfb155786e8a5de2"
+  },
+  "source": "solved",
+  "feasible": true
+}

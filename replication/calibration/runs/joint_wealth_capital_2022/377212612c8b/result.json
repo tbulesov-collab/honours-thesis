@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "key": "377212612c8b",
+  "tau_w": 0.04172819040117323,
+  "tau_k": 0.1530589428965945,
+  "tau_bq": 0.3999999999984937,
+  "tau_l": 0.10301143684840586,
+  "psi": 0.8969885631515941,
+  "ce2_newborn": 2.1242118643628016,
+  "ce2_population": -1.5660724929029146,
+  "ce1_newborn": 3.978349159007607,
+  "output_growth": -3.7459289626415204,
+  "consumption_growth": -1.112315039464018,
+  "top1_wealth_share": 0.4232969733628129,
+  "revenue": 0.20565942673799875,
+  "revenue_gap": 1.299010972052872e-05,
+  "revenue_relative_gap": 6.316720062604024e-05,
+  "elapsed_seconds": 818.347716083008,
+  "result_directory": "calibration/runs/joint_wealth_capital_2022/377212612c8b/Joint_Tax"
+}

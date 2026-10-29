@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "context_id": "eaaf781cfdd8db8c7f466da4deb26b3b907e4cad81fb7c484a9ca9a21b703b0b",
+  "key": "c84d6a3ae14c7705",
+  "rates": [
+    0.0,
+    -0.13618034,
+    0.4
+  ],
+  "reason": "evaluator exited with code 1",
+  "log": "experiments/model_spec_sensitivity_2022/runs/productivity/policies/v2_eaaf781cfdd8/c84d6a3ae14c7705_d48bd876/run.log"
+}

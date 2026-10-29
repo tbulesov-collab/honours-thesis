@@ -1,0 +1,38 @@
+{
+  "point": "tau_bq_+0.4000",
+  "value": 0.4,
+  "rates": [
+    0.030618034,
+    0.0,
+    0.4
+  ],
+  "status": "ok",
+  "result": {
+    "status": "ok",
+    "schema": 2,
+    "context_id": "bf8c109fc300278d8812b0ab50f52d5a075885dff753eea713ec2a2974350139",
+    "key": "15d6fe146f961036",
+    "tau_w": 0.030618034,
+    "tau_k": 0.0,
+    "tau_bq": 0.4,
+    "tau_l": 0.15377643936090346,
+    "psi": 0.8462235606390965,
+    "ce2_newborn": 8.4913007799583,
+    "ce2_population": 4.1804540608573415,
+    "ce1_newborn": 9.036920606795261,
+    "output_growth": 5.76486149180131,
+    "consumption_growth": 7.64123644807384,
+    "top1_wealth_share": 0.4447726564347309,
+    "revenue": 0.20565881380579534,
+    "revenue_gap": 1.2377177517119975e-05,
+    "revenue_relative_gap": 6.018668604257256e-05,
+    "equilibrium_converged": true,
+    "equilibrium_residual": 6.367784953845157e-10,
+    "aggregate_residual": 8.789786607200723e-07,
+    "elapsed_seconds": 2906.5732077500143,
+    "result_directory": "calibration/runs/theta_max_robustness_2022/financing/v2_bf8c109fc300/15d6fe146f961036_c0817307/Joint_Tax",
+    "feasible": true,
+    "output_sha256": "a0f569bb21e7ba59a750e162e162e4990169abc41d0b3523b9c02185f67edd31"
+  },
+  "source": "reused validated result"
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "survey_year": 2022,
+  "provider": "Board of Governors of the Federal Reserve System",
+  "landing_page": "https://www.federalreserve.gov/econres/scf_2022.htm",
+  "packaged_on": "2026-10-26",
+  "provenance": "Unmodified official public-distribution archives already held in the thesis SCF input cache. Every archive member was checked byte-for-byte against the extracted input used locally. No data were redownloaded or transformed for packaging.",
+  "retrieval_date": null,
+  "retrieval_date_note": "Original retrieval date and exact release vintage were not separately recorded; archive member timestamps are metadata, not asserted publication dates. Preserved bytes and SHA-256 hashes identify the input version.",
+  "public_file_families": 4595,
+  "implicates_per_family": 5,
+  "public_file_records": 22975,
+  "documentation_urls": [
+    "https://www.federalreserve.gov/econres/files/codebk2022.txt",
+    "https://www.federalreserve.gov/econres/files/bulletin.macro.txt"
+  ],
+  "files": {
+    "scfp2022excel.zip": {
+      "role": "summary extract",
+      "source_url": "https://www.federalreserve.gov/econres/files/scfp2022excel.zip",
+      "bytes": 2231649,
+      "sha256": "9721aa73ef1df237d0c5a7ce2578ff9a45c8e5a2ef8efc4fab132c6885ace050",
+      "members": [
+        {
+          "path": "SCFP2022.csv",
+          "bytes": 21953323,
+          "sha256": "551e46ba9176a5364d426ddebcea38674b6d0add6aeee6a8bb1df2a2cb914f10",
+          "zip_member_timestamp": [
+            2024,
+            3,
+            29,
+            9,
+            39,
+            14
+          ]
+        }
+      ]
+    },
+    "scf2022s.zip": {
+      "role": "full public Stata data",
+      "source_url": "https://www.federalreserve.gov/econres/files/scf2022s.zip",
+      "bytes": 8856125,
+      "sha256": "409e6811df895766d50b2f597c10b1b3c5813e7d3e0e45d910ad26c0cb07f4eb",
+      "members": [
+        {
+          "path": "p22i6.dta",
+          "bytes": 236952250,
+          "sha256": "61e2fceb1594e4009eb996d6e25d38a5d8e4874930fc2bfce3c87ffa6946ad0a",
+          "zip_member_timestamp": [
+            2023,
+            10,
+            10,
+            10,
+            56,
+            38
+          ]
+        }
+      ]
+    },
+    "scf2022rw1s.zip": {
+      "role": "public Stata replicate weights",
+      "source_url": "https://www.federalreserve.gov/econres/files/scf2022rw1s.zip",
+      "bytes": 26941391,
+      "sha256": "0135b0bcc2858bd326010ef16c1ca6c7c10f55e53c93e4f3b92fd408b342f239",
+      "members": [
+        {
+          "path": "p22_rw1.dta",
+          "bytes": 42621770,
+          "sha256": "1f0222848253ec9d42ad614f1a28bb215d3ae8de3b17a66c53308d81066e91c2",
+          "zip_member_timestamp": [
+            2023,
+            10,
+            10,
+            10,
+            56,
+            38
+          ]
+        }
+      ]
+    }
+  },
+  "income_scale_2021_to_2022": {
+    "numerator": 4315,
+    "denominator": 3992,
+    "source": "https://www.federalreserve.gov/econres/files/bulletin.macro.txt",
+    "definition": "YEAR=2022 CPILAG; retained at its exact ratio for strict-majority diagnostic classifications"
+  }
+}

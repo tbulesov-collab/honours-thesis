@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "key": "db5caf56474b",
+  "tau_w": 0.07126647224647223,
+  "tau_k": -0.5139320225002103,
+  "tau_bq": 0.39999999998577435,
+  "returncode": 1,
+  "elapsed_seconds": 33.76628679194255,
+  "log": "calibration/runs/joint_wealth_capital_2022_extended/db5caf56474b/run.log"
+}

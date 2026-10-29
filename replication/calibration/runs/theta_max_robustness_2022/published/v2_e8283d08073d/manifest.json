@@ -1,0 +1,92 @@
+{
+  "schema": 2,
+  "files": {
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/Compiled_Files_Baseline/GKK_Main.a": "0e4cc396a60d4c2dc72cf40c9d7eab78f1e06ddbd0a1a4a9a04c4f5cadcaee61",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/GKK_Main.f90": "ed6ad78788d02f82ca4f67365a05a5b76f4c0f287477b200c9bdff9f37642de7",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/GKK_Optimal_Taxes.f90": "0d7e865b5bcd7daa8799e4dfb90250f8e93eb7c4ba5b9681a23bc9c1d2e5c8d1",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/GKK_Simul.f90": "ab5a811000a532fe2e87e71ed6d90e3764a4e66888ec28f1548f2eeafcd97fe8",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/GKK_Stats.f90": "231d768df0de05890e013eff21bae14e4c133412e7e6613b1fc976dc1604d7be",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/NRTYPE.F90": "d77fe23f0f0c29d8be409cbf9b4c73c53fc7b784da0d07ada38bdb9373da654c",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/NRUTIL.F90": "7dd6a9dac1b108d635d896b68cf1711203418a1cf007bea7fa151f3552dd5d71",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/Opt_Tax_Functions.f90": "17ac4b71b4682bb78df0bced079c2488f6bf6c6074a786e5bfab4b7dfa03131c",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/Opt_Tax_Parameters.f90": "aacdc73337378f8e26c517251a28a8c6f4848995780a73af12b638e6a1572db8",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/Simulation_Module.f90": "0e72af660a939aa3ddf8bec04069c13fe95ec3300a6675833b1a8c02dd4e80c3",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/Toolbox.f90": "fbdbc1a402e915804514161026ddb8b3d5cba560d20bcbc12cecf56153d80892",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/DBN": "bde48ac88d7199fe3b1bd03c6b17bd92fb7b2cbc3be8d46ac4b2ca9465977522",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/EBAR": "cb1c4020239a80ba3b5cb6b57cae253053770940aa29332efdd53f76060f6e56",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/GBAR": "a1c3ff60991b719203faeb494d0da30a3ad47e88dbe9664d9c76bc38004bdba2",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/Income_AT": "d7515b1cd4f54390c1de9ef0f2819e43cf5f3035d7fa6e945d993ce5401f4d44",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/K_C": "de80cd13684ec4a3b0ec7b1603ddb7d0f2a6b6bb0f47dfb5097be01706c0c9f9",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/K_P": "de80cd13684ec4a3b0ec7b1603ddb7d0f2a6b6bb0f47dfb5097be01706c0c9f9",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/L_C": "de80cd13684ec4a3b0ec7b1603ddb7d0f2a6b6bb0f47dfb5097be01706c0c9f9",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/L_P": "de80cd13684ec4a3b0ec7b1603ddb7d0f2a6b6bb0f47dfb5097be01706c0c9f9",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/NBAR": "d34c07ba15f47cc64cb17bd29e785b9d456ce5b24d90caa51636393df0ae80eb",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/P": "0f92ac7d4a79eade62b67340e9cbfdc0b2ab4f31a4bee156ea3b80bb07076328",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/QBAR": "659689c6365cd9a64525ef79e6fe3c030c07a3eee5baf954410d5f4bf15701df",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/R": "0de26761d8744869411e44aa2d4a74293ed67e460532a73d1e55726e84cdc9da",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/SSC_Payments": "601024bd005c6b3497819a774af2595ad0ab658c977d0917902b9ffffee4159a",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/YBAR": "99b182384e8baf9e402ad7dbb86cdc3a0c53c693098ef23ae1c8255bae07a046",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/YBAR_C": "de80cd13684ec4a3b0ec7b1603ddb7d0f2a6b6bb0f47dfb5097be01706c0c9f9",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/YBAR_P": "de80cd13684ec4a3b0ec7b1603ddb7d0f2a6b6bb0f47dfb5097be01706c0c9f9",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/aprime": "fecc2b9194d354567c94d90eb07d1de0cc78b49b1d485496427bebe648da6b68",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/bq_value": "5e9a27f0b1a54e54933ddd278ef272601d32569292fc68a2e478185bbec20125",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/cons": "655751d5dbd43b92138ff1ee34b4f91038c325556b197ff7d8971eb1717a82be",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/hours": "f91350a528ff0f9e7d61d213f849472bcac4e9a8feb4c51d4d603047f6cae0e7",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/psi": "de6930628a6fc8e0965bddfe7ae57fb600a11acb8df7c24c68a7392efb1d4855",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/tauK": "908b417c75632853ea9f9c90ce7071cd6154ef8d34479965c3e8bb610c6dcc4c",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/tauPL": "de80cd13684ec4a3b0ec7b1603ddb7d0f2a6b6bb0f47dfb5097be01706c0c9f9",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/tauW_at": "de80cd13684ec4a3b0ec7b1603ddb7d0f2a6b6bb0f47dfb5097be01706c0c9f9",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/tauW_bt": "de80cd13684ec4a3b0ec7b1603ddb7d0f2a6b6bb0f47dfb5097be01706c0c9f9",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/v_pr": "d429bad70a402632c211d0f147d85a5c8e9726464673a8e318d085534d843ddd",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/v_pr_nb": "d4df586e729478bb92f8f7d89553e54f5d6329e77f95bab7f42d5e34dcc94317",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/value": "aaacaa5caf6ba4dc9a32d828a18ec7c2dfccf3c4a73277851e8b98bdd770097a",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/Bench_Files/wage": "bcc72569a6c39120563ac6cd2d19ddd6f89a0b93a4bf32d12dd5d08fc819669e",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e/output.txt": "7b2531baafc5defc3c8684776a1406140ae26551e25c259bb5c1e30b7d6920eb",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/experiments/joint_tax_fixed_labor/GKK_Main_fixed_labor.f90": "0bffec07271e6ddaaa8ab611bf8771e8069a21bec6c1b6aa0404211beae854c7",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/experiments/joint_tax_fixed_labor/optimize_joint_taxes_fixed_labor.py": "25e7c801232b3a77bf69df234fbee0ee9163cc1d2fe56d58df5e4cfc10dd8d26",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/global.f90": "45d58422807310611af1b413dd7f62a52ba6916d57a016c1cd68e33e4b23e43a",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/parameters.f90": "d5bd75f3ff9b6462f0e22ec4fe8f62f52fca59c90e070846c6013a7b4d6ebbc1",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/programfunctions.f90": "92214a02d340bde04393adb30ee4d5a4f3f65479a181b08b8b5f17f4fdbfc642",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/tools/optimize_joint_taxes.py": "2e563287ef6b47f2ddcc5b375f662e9f5280506f020a1a3c315ccd6efde55796",
+    "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/tools/policy_evaluation.py": "30c601b6681b09ab3e62793aaaf38c8ec03c69c7b674b80a4abf45ca21d52e7f"
+  },
+  "environment": {
+    "GKK_DBN_MAX_ITER": "2000",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.27830776649078415",
+    "GKK_X_HI": "1.4620688061231504",
+    "GKK_P1_X": "0.0502979531819958",
+    "GKK_P2_X": "0.032874368735997382",
+    "GKK_THETA_MAX": "2.7999999999999998",
+    "OMP_NUM_THREADS": "4",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "GKK_JOINT_BUDGET_TOL": "0.0001",
+    "GKK_JOINT_FULL_OUTPUT": "0",
+    "GKK_JOINT_FIXED_LABOR": "0",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_BUDGET_MAX_ITER": "100"
+  },
+  "budget_tolerance": 0.0001,
+  "bounds": [
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "labor_bounds": [
+    0.0,
+    0.6
+  ],
+  "fixed_labor": false,
+  "benchmark": "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/3f5118dda04e"
+}

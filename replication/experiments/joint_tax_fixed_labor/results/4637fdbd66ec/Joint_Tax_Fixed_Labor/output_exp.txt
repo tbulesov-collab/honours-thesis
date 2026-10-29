@@ -1,0 +1,104 @@
+  
+ Wealth Taxes
+  
+ Threshold_Factor   0.0000000000000000     
+ Wealth_Factor   0.0000000000000000     
+ Threshold   0.0000000000000000     
+ Wealth_Tax_Above   6.1317581203099998E-002
+ Share_Above_Threshold  0.99999999999998090     
+ Psi  0.77600000000000002     
+ Tau_K  0.12886233565700000     
+ Tau_C   7.4999999999999997E-002
+ Tau_BQ   8.3045543310299993E-002
+  
+ Results for experimental economy
+  
+ Aggregate Variables
+ GBAR  0.29235289609626441     
+ KBAR   2.7551805475899367     
+ QBAR   3.7805164565161284     
+ NBAR  0.57732714315179912     
+ EBAR   1.0092084170811919     
+ YBAR   1.2242599405060546     
+ CBAR  0.79139582720029766     
+ P   14.795771333658072     
+ wage   1.2723392153250843     
+ R   6.7681850124093081     
+  
+ After_Tax_Prices
+ R_AT -0.23573723675845634     
+ wage_AT  0.98733523109226551     
+  
+ Moments:
+ Debt_Output   1.2290788875281453     
+ Wealth_Output   2.2504865645208221     
+ TFP_Q   1.3721483551497533     
+ Wealth_Top_0.01%  0.25321964067397956     
+ Wealth_Top_0.1%  0.39435935135377559     
+ Wealth_Top_1%  0.52578271169431923     
+ Wealth_Top_10%  0.77829958420753631     
+ Wealth_Top_20%  0.88475117365003442     
+ Wealth_Top_40%  0.97134009379401010     
+ Mean_Labor_Earnings -0.47720869067942734     
+ STD_Labor_Earnings  0.76786509731647190     
+ Mean_Labor_25_60  0.41822234722242496     
+ Mean_Return   12.774367037269540     
+ Std_Return   9.2658289499494659E-002
+ Mean_Return_by_z   6.7682091730266336     
+ Mean_Return_by_z   6.7691084465640055     
+ Mean_Return_by_z   6.7983702158652637     
+ Mean_Return_by_z   7.4749689527072549     
+ Mean_Return_by_z   10.604008599871410     
+ Mean_Return_by_z   16.128009905333055     
+ Mean_Return_by_z   18.598463522219827     
+ Mean_Return_by_z   19.321830919776723     
+ Mean_Return_by_z   22.702971067219689     
+  
+ Bequest
+ Total_Bequest_Wealth   1.0880743050837747E-002
+ Mean_Bequest_Wealth  0.63096101482902933     
+ BQ/Inc_for_90th_pct   1.8797216112318489        1.8259323866586408        1.8659631863632062     
+  
+ Labor
+ Fraction_of_workers  0.98230706278487812     
+ Av.Hours  0.42350718767602280     
+ Av.Frisch_Elasticity  0.98292400610980835     
+ Frisch_Elasticity_Av  0.79462093911747422     
+  
+ Taxes
+ Tax_Rev/GDP  0.35995683349878060     
+ Capital_Tax/Total_Tax  0.48628173790878382     
+ Capital_Tax/_GDP  0.17504043456592977     
+ Labor_Tax/Total_Tax  0.37337702483870111     
+ Labor_Tax/GDP  0.13439961156213440     
+ Average_Labor_Tax  0.22400000000000786     
+ Cons_Tax/Total_Tax  0.13468863689451480     
+ Cons_Tax/GDP   4.8482095244816580E-002
+ Estate_Tax/Total_Tax   5.6526003580003948E-003
+ Estate_Tax/GDP   2.0346921258998954E-003
+  
+ Public_Corporate_Sector
+ Y_C/YBAR   0.0000000000000000     
+ K_C/KBAR   0.0000000000000000     
+ L_C/NBAR   0.0000000000000000     
+ Y_C   0.0000000000000000     
+ L_C   0.0000000000000000     
+ K_C   0.0000000000000000     
+ Y_P   0.0000000000000000     
+ L_P   0.0000000000000000     
+ K_P   0.0000000000000000     
+  
+ Share_Entrepreneurs
+ Pr/BT_Income>10%   16.270425175356543     
+ Pr/BT_Income>50%   3.7179439058829811     
+  
+ Welfare and output gain
+  
+ CE1_Pop(bench)  -9.5556833957949205     
+ CE1_Pop(exp)  -8.8391764563977056     
+ CE1_NB(bench)  -14.013536488170923     
+ CE1_NB(exp)  -13.706655101190046     
+ Frac_pos_welfare(bench)   4.7459857407623849     
+ CE2_Pop(exp)  -16.874041972859864     
+ CE2_NB(exp)  -15.952829005307489     
+  

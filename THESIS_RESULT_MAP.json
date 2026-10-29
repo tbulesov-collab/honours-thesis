@@ -1,0 +1,1101 @@
+{
+  "schema_version": 1,
+  "description": "Links each of the 20 tables and five figures in the thesis, and selected results in the text, to the saved results, code and commands that reproduce them.",
+  "default_command": "python3 scripts/check_thesis_results.py",
+  "command_working_directory": "Each command has an explicit working directory relative to the repository root. Commands are independent argument lists. Build and model-solving commands need the prerequisites in REPLICATION_GUIDE.md and should be run in a separate copy of the repository.",
+  "results": [
+    {
+      "label": "tab:ext_params",
+      "title": "External parameters",
+      "checks": [
+        "calibration"
+      ],
+      "inputs": [
+        "replication/parameters.f90",
+        "replication/GKK_Main.f90"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py"
+      ],
+      "regenerate": "These are constants in the model source; nothing needs to be solved.",
+      "limits": "The values are set in parameters.f90 and GKK_Main.f90; their empirical sources are cited in the thesis.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:int_params",
+      "title": "Starting and staged parameter values",
+      "checks": [
+        "calibration"
+      ],
+      "inputs": [
+        "replication/calibration/runs/scf_2022/best.json",
+        "replication/calibration/runs/business_financing_2022/best.json",
+        "replication/calibration/business_financing_2022.csv"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/tools/recalibrate_scf.py",
+        "replication/tools/recalibrate_financing_2022.py"
+      ],
+      "regenerate": "The first command recomputes the table from the saved parameter files. The other two run the SCF and financing calibration stages after the model is built and the inputs are prepared (see REPLICATION_GUIDE.md).",
+      "limits": "A new calibration run starts from the saved targets and need not follow exactly the same optimisation path.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "tools/recalibrate_scf.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "tools/recalibrate_financing_2022.py"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:defn",
+      "title": "Audited SCF definitions and wealth per head",
+      "checks": [
+        "calibration"
+      ],
+      "inputs": [
+        "replication/calibration/scf_2022_definition_moments_audited.csv",
+        "data/scf2022/MANIFEST.json",
+        "data/scf2022/scfp2022excel.zip",
+        "data/scf2022/scf2022s.zip",
+        "data/scf2022/scf2022rw1s.zip",
+        "data/scf2022/audit_reproduction_check.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "scripts/rebuild_scf_audit.py"
+      ],
+      "regenerate": "The first command rebuilds the SCF definitions from the bundled public archives. The second recomputes the four rows shown in the thesis and their wealth-per-head ratios.",
+      "limits": "The rebuild covers all seven SCF definitions (28 numbers); four of them appear in the thesis table. The calibration targets and their standard errors are produced by separate scripts; see data/scf2022/README.md.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-raw-data",
+          "argv": [
+            "python3",
+            "scripts/rebuild_scf_audit.py",
+            "--check"
+          ]
+        },
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:financing",
+      "title": "Benchmark and audited targets",
+      "checks": [
+        "calibration"
+      ],
+      "inputs": [
+        "replication/calibration/runs/business_financing_2022/rn_reform/output.txt",
+        "replication/calibration/runs/repaired_statistics_2022/summary.json",
+        "replication/calibration/scf_2022_definition_moments_audited.csv"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/tools/recalibrate_financing_2022.py"
+      ],
+      "regenerate": "The command recomputes the table from the saved benchmark report and percentile statistics. Solving it again requires the reported-calibration benchmark sequence in REPLICATION_GUIDE.md.",
+      "limits": "The table combines aggregates from the saved benchmark with the percentile statistics in calibration/runs/repaired_statistics_2022/. Compare with the saved benchmark, not a newly solved one.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:rn",
+      "title": "Revenue-neutral macro reform",
+      "checks": [
+        "rn_and_separate"
+      ],
+      "inputs": [
+        "replication/calibration/runs/business_financing_2022/rn_reform/output.txt",
+        "replication/calibration/runs/business_financing_2022/rn_reform/Tax_Reform/output_exp.txt"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/tools/rn_reform_tables.py",
+        "replication/tools/reproduce_rn_reform.sh"
+      ],
+      "regenerate": "Exports the table as CSV from the saved benchmark and reform reports. --model-dir is relative to replication/ and --out to the current directory. Solving it again uses the revenue-neutral reform commands in REPLICATION_GUIDE.md.",
+      "limits": "The Guvenen et al. comparison column is taken from the published paper, not recomputed here.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "export-from-saved",
+          "argv": [
+            "python3",
+            "replication/tools/rn_reform_tables.py",
+            "--model-dir",
+            "calibration/runs/business_financing_2022/rn_reform",
+            "--out",
+            "output/tables/rn"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:opt",
+      "title": "Separate tax policies",
+      "checks": [
+        "rn_and_separate"
+      ],
+      "inputs": [
+        "replication/calibration/runs/headline_revalidation_2022/validated_headline.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/tools/revalidate_headline_points_2022.py",
+        "replication/tools/theta_max_robustness_2022.py"
+      ],
+      "regenerate": "The first command recomputes the separate-policy rows from the saved results. The second solves the separate policies again after the benchmark and evaluator are rebuilt; the headline-policy driver reuses these results.",
+      "limits": "The commands solve the selected policies; the search that selected them is not rerun.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "tools/theta_max_robustness_2022.py",
+            "--arm",
+            "financing",
+            "--anchors",
+            "owt,okit"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:marginal_returns",
+      "title": "Marginal returns and borrowing constraints (Table VII)",
+      "checks": [
+        "marginal_returns"
+      ],
+      "inputs": [
+        "replication/experiments/marginal_returns_2022/results.json",
+        "replication/experiments/marginal_returns_2022/run_map.example.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/experiments/marginal_returns_2022/extract_marginal_returns.py",
+        "scripts/test_marginal_run_map.py"
+      ],
+      "regenerate": "Re-extracts the table from the bundled detailed reports into output/marginal_returns without solving the model. The extractor reads seven policy runs and their benchmark reports, including the six policy rows shown in Table VII. For newly solved runs, copy run_map.example.json, replace its seven run folders (relative to replication/) and pass --run-map /path/to/my_runs.json.",
+      "limits": "Marginal-return percentiles are wealth-weighted; constraint shares are population-weighted within each ability and productivity state. After-tax returns are computed from the Before_Tax reports, because the model's After_Tax report field leaves out the capital-income subsidy under joint policies. The 42 detailed reports are bundled at the paths the extractor expects.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": ".",
+          "kind": "export-from-saved",
+          "argv": [
+            "python3",
+            "replication/experiments/marginal_returns_2022/extract_marginal_returns.py",
+            "--out",
+            "output/marginal_returns"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:joint_mechanism",
+      "title": "Five joint-policy columns and output accounting",
+      "checks": [
+        "saved_joint_table"
+      ],
+      "inputs": [
+        "replication/validation/policy_table_inputs/index.json",
+        "replication/validation/saved_comparison.json"
+      ],
+      "code": [
+        "scripts/check_saved_policy_tables.py"
+      ],
+      "regenerate": "Rebuilds the five columns, sixteen rows and the output log-accounting identities from the saved reports. Solving the policies again uses the headline-policy, common-grid and Part D commands in REPLICATION_GUIDE.md.",
+      "limits": "Add --show-table to print the rows.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_saved_policy_tables.py",
+            "--show-table"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:estate",
+      "title": "Separate-wealth-tax estate sweep",
+      "checks": [
+        "estate_and_household"
+      ],
+      "inputs": [
+        "replication/calibration/runs/estate_tax_grid_2022/grid_results.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/tools/policy_grid_2022.py"
+      ],
+      "regenerate": "The first command recomputes the table from the saved results; the second solves the separate-wealth-tax estate sweep again after the benchmark and evaluator are prepared.",
+      "limits": "Lifetime tax rates are held fixed across the sweep.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "tools/policy_grid_2022.py",
+            "--grid",
+            "estate"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:estate_joint",
+      "title": "Joint-policy estate sweep",
+      "checks": [
+        "estate_and_household"
+      ],
+      "inputs": [
+        "replication/experiments/three_tax_2022/results.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/experiments/three_tax_2022/run_three_tax.py"
+      ],
+      "regenerate": "The first command recomputes the table from the saved results; the second runs the estate phase of the three-tax driver after the benchmark and evaluator are prepared.",
+      "limits": "All rows use the same lifetime tax rates and benchmark.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/three_tax_2022/run_three_tax.py",
+            "--phase",
+            "estate"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:estate_decomposition",
+      "title": "Estate welfare decomposition",
+      "checks": [
+        "estate_and_household"
+      ],
+      "inputs": [
+        "replication/experiments/three_tax_2022/results.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/experiments/three_tax_2022/run_three_tax.py"
+      ],
+      "regenerate": "The first command recomputes the table from the saved results; the second runs the decomposition phase of the three-tax driver after the benchmark and evaluator are prepared.",
+      "limits": "The decomposition is multiplicative accounting of the welfare change, not a causal decomposition by channel.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/three_tax_2022/run_three_tax.py",
+            "--phase",
+            "decomp"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:estate_measures",
+      "title": "Alternative welfare measures",
+      "checks": [
+        "estate_incidence"
+      ],
+      "inputs": [
+        "replication/calibration/runs/estate_tax_grid_2022/grid_results.json",
+        "replication/calibration/runs/headline_revalidation_2022/validated_headline.json",
+        "replication/experiments/policy_reoptimization_2022/runs/grid_points.json"
+      ],
+      "code": [
+        "scripts/thesis_figures/estate_incidence.py"
+      ],
+      "regenerate": "Create the output folder, then rebuild the table and figure from the saved results. The model is not solved.",
+      "limits": "Group averages use the saved age-by-ability welfare changes and benchmark weights; transition welfare is not computed.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "prepare-output",
+          "argv": [
+            "mkdir",
+            "-p",
+            "output/figures"
+          ]
+        },
+        {
+          "cwd": ".",
+          "kind": "draw-from-saved",
+          "argv": [
+            "python3",
+            "scripts/thesis_figures/estate_incidence.py",
+            "--model-root",
+            "replication"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:ch7_recal_parameters",
+      "title": "Recalibrated entrepreneurial parameters",
+      "checks": [
+        "calibration"
+      ],
+      "inputs": [
+        "replication/experiments/model_spec_sensitivity_2022/recal_results.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/experiments/model_spec_sensitivity_2022/recalibrate.py"
+      ],
+      "regenerate": "The first command recomputes the table from the saved parameters; the second runs the recalibration after its model variants and benchmark are prepared.",
+      "limits": "A new recalibration run may follow a slightly different optimiser path on another platform.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/model_spec_sensitivity_2022/recalibrate.py"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:parameter_direction",
+      "title": "Policy comparisons along the calibration parameter direction (Table XIV)",
+      "checks": [
+        "parameter_direction"
+      ],
+      "inputs": [
+        "replication/experiments/model_spec_sensitivity_2022/flat/results.json",
+        "replication/experiments/model_spec_sensitivity_2022/flat/minus/financing.json",
+        "replication/experiments/model_spec_sensitivity_2022/flat/plus/financing.json",
+        "replication/experiments/model_spec_sensitivity_2022/results.json",
+        "replication/calibration/runs/scf_2022/best.json",
+        "replication/calibration/runs/business_financing_2022/best.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/experiments/model_spec_sensitivity_2022/flat_direction.py",
+        "replication/experiments/model_spec_sensitivity_2022/recalibrate.py"
+      ],
+      "regenerate": "--plan reconstructs the parameter direction from the saved Jacobian records (recal/control/solves) without running the model. --summary-only rewrites the summary from the saved financing and policy results. A full rerun needs the control build, the Jacobian records and a newly solved benchmark (see REPLICATION_GUIDE.md); it re-fits the financing parameter on each side and holds the capital-tax rates fixed.",
+      "limits": "The largest proportional change in any parameter is 10%. The centre uses a newly solved benchmark, about 0.10 welfare points below the headline values. The weakest (third) direction is not evaluated. The saved results include some joint policies that support the ranking but are not shown in the table. This is a local comparison, not a test of global identification.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "plan",
+          "argv": [
+            "python3",
+            "experiments/model_spec_sensitivity_2022/flat_direction.py",
+            "--plan"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "summary-from-saved",
+          "argv": [
+            "python3",
+            "experiments/model_spec_sensitivity_2022/flat_direction.py",
+            "--summary-only"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/model_spec_sensitivity_2022/flat_direction.py",
+            "--max-parallel",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:ch7_robustness_summary",
+      "title": "Separate-policy and estate robustness",
+      "checks": [
+        "robustness",
+        "asset_grid"
+      ],
+      "inputs": [
+        "replication/experiments/table15_estate_2022/results.json",
+        "replication/experiments/model_spec_sensitivity_2022/recal_results.json",
+        "replication/experiments/policy_reoptimization_2022/runs/grid_points.json",
+        "replication/experiments/robustness_gkkoc_2022/runs/looser_policies.json",
+        "replication/experiments/robustness_gkkoc_2022/runs/partB_all.json",
+        "replication/experiments/robustness_gkkoc_2022/runs/c6_policies.json",
+        "replication/experiments/robustness_gkkoc_2022/runs/c7_policies.json",
+        "replication/experiments/grid_accuracy_2022/results_na401.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/experiments/table15_estate_2022/run_table15_estate.py",
+        "replication/experiments/robustness_gkkoc_2022/tier1.py",
+        "replication/experiments/robustness_gkkoc_2022/partB.py",
+        "replication/experiments/robustness_gkkoc_2022/partC6.py",
+        "replication/experiments/robustness_gkkoc_2022/partC7.py",
+        "replication/experiments/grid_accuracy_2022/run_grid_check.py"
+      ],
+      "regenerate": "Follow the experiment sequence in REPLICATION_GUIDE.md. Each matched pair uses its own benchmark.",
+      "limits": "The table has eight comparisons: seven economic variants and a finer asset grid.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:asset_grid_check",
+      "title": "Seven policies on three asset grids (Table XVI)",
+      "checks": [
+        "asset_grid"
+      ],
+      "inputs": [
+        "replication/experiments/grid_accuracy_2022/results_na301.json",
+        "replication/experiments/grid_accuracy_2022/results_na401.json",
+        "replication/experiments/grid_accuracy_2022/runs/na301/points.json",
+        "replication/experiments/grid_accuracy_2022/runs/na401/points.json",
+        "replication/experiments/grid_accuracy_2022/variants/na301/provenance.json",
+        "replication/experiments/grid_accuracy_2022/variants/na401/provenance.json",
+        "replication/experiments/grid_accuracy_2022/results_extended.json",
+        "replication/experiments/grid_accuracy_2022/runs/na201/points_extended.json",
+        "replication/experiments/grid_accuracy_2022/variants/na201_guard/provenance.json",
+        "replication/experiments/grid_accuracy_2022/runs/na301/points_extended.json",
+        "replication/experiments/grid_accuracy_2022/variants/na301_guard/provenance.json",
+        "replication/experiments/grid_accuracy_2022/runs/na401/points_extended.json",
+        "replication/experiments/grid_accuracy_2022/variants/na401_guard/provenance.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/experiments/grid_accuracy_2022/make_grid_variant.py",
+        "replication/experiments/grid_accuracy_2022/run_grid_check.py",
+        "replication/experiments/grid_accuracy_2022/make_guard_variant.py",
+        "replication/experiments/grid_accuracy_2022/run_extended_grid_check.py"
+      ],
+      "regenerate": "The first command recomputes the table from the saved results. The make/run pairs build and solve the 301- and 401-point benchmarks and the four main policies (the 301-point build also creates the 201-point reference build). make_guard_variant.py then builds evaluators that accept subsidies up to 95%, and run_extended_grid_check.py evaluates the three extended policies using the existing benchmarks. --summary-only rewrites the extended summary from the saved results without solving the model.",
+      "limits": "The three extended-policy gains fall by 0.70–0.78 points from 201 to 401 nodes, and the 9% and 10% wealth-tax points stay tied. Their 201-point values use a newly solved benchmark and are about 0.10 points below the headline values. The only source change in the 95% builds is the subsidy input limit. These are finite-grid comparisons, not a formal error bound.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "build",
+          "argv": [
+            "python3",
+            "experiments/grid_accuracy_2022/make_grid_variant.py",
+            "--na",
+            "301"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/grid_accuracy_2022/run_grid_check.py",
+            "--na",
+            "301"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "build",
+          "argv": [
+            "python3",
+            "experiments/grid_accuracy_2022/make_grid_variant.py",
+            "--na",
+            "401",
+            "--no-reference"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/grid_accuracy_2022/run_grid_check.py",
+            "--na",
+            "401"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "build",
+          "argv": [
+            "python3",
+            "experiments/grid_accuracy_2022/make_guard_variant.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/grid_accuracy_2022/run_extended_grid_check.py",
+            "--max-parallel",
+            "2"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "summary-from-saved",
+          "argv": [
+            "python3",
+            "experiments/grid_accuracy_2022/run_extended_grid_check.py",
+            "--summary-only"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:extended_subsidy_grid",
+      "title": "Extended subsidy grid",
+      "checks": [
+        "policy_grids"
+      ],
+      "inputs": [
+        "replication/experiments/policy_reoptimization_2022/runs/grid_points.json",
+        "replication/experiments/policy_reoptimization_2022/runs/edge_points.json",
+        "replication/experiments/robustness_gkkoc_2022/runs/partB_all.json",
+        "replication/experiments/robustness_gkkoc_2022/runs/partD_all.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/experiments/policy_reoptimization_2022/reoptimize.py",
+        "replication/experiments/robustness_gkkoc_2022/partB.py",
+        "replication/experiments/robustness_gkkoc_2022/partD.py"
+      ],
+      "regenerate": "The first command recomputes the table from the saved results; the four numerical commands solve the grid again, in order, after their benchmark and variant builds.",
+      "limits": "Dashes mark points that were not evaluated. Welfare is still rising at the 95% subsidy, so the grid does not identify an unrestricted optimum.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/policy_reoptimization_2022/reoptimize.py",
+            "--phase",
+            "grid"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/policy_reoptimization_2022/reoptimize.py",
+            "--phase",
+            "edge"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/robustness_gkkoc_2022/partB.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/robustness_gkkoc_2022/partD.py"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:ch7_fine",
+      "title": "Fine capital-tax grid",
+      "checks": [
+        "policy_grids"
+      ],
+      "inputs": [
+        "replication/calibration/runs/okit_fine_grid_2022/grid_results.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/tools/policy_grid_2022.py"
+      ],
+      "regenerate": "The first command recomputes the table from the saved results; the second evaluates the ten-rate capital-tax grid after the benchmark and evaluator are prepared.",
+      "limits": "The flat region is assessed on a finite grid.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "tools/policy_grid_2022.py",
+            "--grid",
+            "okit"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:ch7_recal_capital",
+      "title": "Recalibrated capital-tax sweep",
+      "checks": [
+        "policy_grids"
+      ],
+      "inputs": [
+        "replication/experiments/policy_reoptimization_2022/results.json",
+        "replication/experiments/model_spec_sensitivity_2022/recal_results.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/experiments/policy_reoptimization_2022/reoptimize.py"
+      ],
+      "regenerate": "The first command recomputes the table from the saved results. The recalibrated capital-tax sweep is part of the grid phase of reoptimize.py; its search phase is a separate joint-policy optimisation. Prepare the recalibrated benchmark and evaluator first.",
+      "limits": "Welfare levels are relative to the recalibrated benchmark and are not compared across benchmarks.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/policy_reoptimization_2022/reoptimize.py",
+            "--phase",
+            "grid"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tab:model_conventions",
+      "title": "Implementation conventions and sensitivity",
+      "checks": [
+        "calibration",
+        "robustness",
+        "asset_grid",
+        "other_claims"
+      ],
+      "inputs": [
+        "replication/experiments/model_spec_sensitivity_2022/results.json",
+        "replication/experiments/model_spec_sensitivity_2022/recal_results.json",
+        "replication/experiments/grid_accuracy_2022/results_na401.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/experiments/model_spec_sensitivity_2022/make_variants.py",
+        "replication/experiments/model_spec_sensitivity_2022/run_sensitivity.py"
+      ],
+      "regenerate": "The first command recomputes the table from the saved results; the build and run commands solve the implementation variants. The asset-grid row uses the asset-grid commands listed under Table XVI.",
+      "limits": "The borrowing-index and pension-cap rows are not evaluated numerically.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "build",
+          "argv": [
+            "python3",
+            "experiments/model_spec_sensitivity_2022/make_variants.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/model_spec_sensitivity_2022/run_sensitivity.py"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fig:surface",
+      "title": "Joint welfare surface",
+      "checks": [
+        "figure_data",
+        "policy_grids"
+      ],
+      "inputs": [
+        "replication/experiments/policy_reoptimization_2022/runs/grid_points.json",
+        "replication/experiments/robustness_gkkoc_2022/runs/partB_all.json",
+        "replication/experiments/robustness_gkkoc_2022/runs/partD_all.json"
+      ],
+      "code": [
+        "scripts/thesis_figures/make_thesis_figures.py"
+      ],
+      "regenerate": "Draws the figure from the saved results; the model is not run.",
+      "limits": "Points come from the saved policy grids; the headline rankings use the re-solved headline policies. Connecting lines are visual guides.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "draw-from-saved",
+          "argv": [
+            "python3",
+            "scripts/thesis_figures/make_thesis_figures.py",
+            "--only",
+            "surface"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fig:estate",
+      "title": "Estate comparison under separate and joint taxes",
+      "checks": [
+        "estate_and_household",
+        "estate_figure"
+      ],
+      "inputs": [
+        "replication/calibration/runs/estate_tax_grid_2022/grid_results.json",
+        "replication/experiments/three_tax_2022/results.json"
+      ],
+      "code": [
+        "scripts/thesis_figures/estate_comparison.py"
+      ],
+      "regenerate": "Draws both panels from the saved results; the model is not run.",
+      "limits": "The thesis draws this figure with PGFPlots; the script produces an equivalent standalone version.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "draw-from-saved",
+          "argv": [
+            "python3",
+            "scripts/thesis_figures/estate_comparison.py"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fig:groups",
+      "title": "Age-by-ability welfare heat maps",
+      "checks": [
+        "figure_data"
+      ],
+      "inputs": [
+        "replication/experiments/robustness_gkkoc_2022/welfare_by_group.json"
+      ],
+      "code": [
+        "scripts/thesis_figures/make_thesis_figures.py",
+        "replication/experiments/robustness_gkkoc_2022/welfare_by_group.py"
+      ],
+      "regenerate": "Draws the figure from the saved results; the model is not run.",
+      "limits": "Values are stationary consumption-equivalent changes by age and ability using benchmark weights, not effects along a transition.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "draw-from-saved",
+          "argv": [
+            "python3",
+            "scripts/thesis_figures/make_thesis_figures.py",
+            "--only",
+            "groups"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fig:estate_incidence",
+      "title": "Effect of estate removal by group",
+      "checks": [
+        "estate_incidence"
+      ],
+      "inputs": [
+        "replication/calibration/runs/estate_tax_grid_2022/grid_results.json",
+        "replication/calibration/runs/headline_revalidation_2022/validated_headline.json",
+        "replication/experiments/policy_reoptimization_2022/runs/grid_points.json"
+      ],
+      "code": [
+        "scripts/thesis_figures/estate_incidence.py"
+      ],
+      "regenerate": "Create the output folder, then rebuild the table and figure from the saved results. The model is not solved.",
+      "limits": "Each value is the difference between two benchmark-relative welfare changes, not the compensation needed to move between the two policies.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "prepare-output",
+          "argv": [
+            "mkdir",
+            "-p",
+            "output/figures"
+          ]
+        },
+        {
+          "cwd": ".",
+          "kind": "draw-from-saved",
+          "argv": [
+            "python3",
+            "scripts/thesis_figures/estate_incidence.py",
+            "--model-root",
+            "replication"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fig:flat",
+      "title": "Flat welfare regions",
+      "checks": [
+        "figure_data",
+        "policy_grids"
+      ],
+      "inputs": [
+        "replication/calibration/runs/okit_fine_grid_2022/grid_results.json",
+        "replication/experiments/policy_reoptimization_2022/runs/edge_points.json",
+        "replication/experiments/robustness_gkkoc_2022/runs/partD_all.json"
+      ],
+      "code": [
+        "scripts/thesis_figures/make_thesis_figures.py"
+      ],
+      "regenerate": "Draws the figure from the saved results; the model is not run.",
+      "limits": "Finite policy grids and the 0.15-point reporting threshold do not establish a global optimum.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "draw-from-saved",
+          "argv": [
+            "python3",
+            "scripts/thesis_figures/make_thesis_figures.py",
+            "--only",
+            "flat"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "sec:groups-household-mechanism",
+      "title": "After-tax wage and top-ability returns",
+      "checks": [
+        "estate_and_household"
+      ],
+      "inputs": [
+        "replication/experiments/three_tax_2022/results.json",
+        "replication/GKK_Stats.f90"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py"
+      ],
+      "regenerate": "Recomputes the wage and return figures in the text from the saved results; the joint-policy estate commands regenerate the underlying reports.",
+      "limits": "Recomputes the 2.58% after-tax wage increase and reads ability 9's mean return (14.53% to 14.29%) from the Mean_Return_by_z rows. These are stationary averages and include composition changes.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "sec:return_mechanism",
+      "title": "Break-even returns",
+      "checks": [
+        "estate_and_household"
+      ],
+      "inputs": [
+        "replication/validation/saved_comparison.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py"
+      ],
+      "regenerate": "Recomputes the break-even returns from the saved tax rates: the wealth-tax rate divided by the absolute subsidy rate.",
+      "limits": "This is algebra at the stated rates, not an estimated behavioural response.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "sec:gkkoc_robustness-additional",
+      "title": "Implementation, on-top wealth tax and misallocation results in the text",
+      "checks": [
+        "other_claims"
+      ],
+      "inputs": [
+        "replication/experiments/model_spec_sensitivity_2022/results.json",
+        "replication/experiments/robustness_gkkoc_2022/runs/side.json",
+        "replication/experiments/robustness_gkkoc_2022/misallocation_link.json",
+        "replication/experiments/robustness_gkkoc_2022/misallocation_link_sample.json"
+      ],
+      "code": [
+        "scripts/check_thesis_results.py",
+        "replication/experiments/robustness_gkkoc_2022/tier1.py",
+        "replication/experiments/robustness_gkkoc_2022/misallocation_link.py"
+      ],
+      "regenerate": "The first command recomputes the figures in the text from the saved results. tier1.py solves the on-top wealth tax and looser-credit cases again after its variants and benchmark are prepared. misallocation_link.py rebuilds the 118 correlation observations from the fixed sample. The implementation sensitivities use the commands listed under Table XX.",
+      "limits": "Covers the four on-top wealth-tax cases, the implementation effects and the correlations across all 118 saved evaluations. The fixed-labour cases use a different fiscal closure by design; correlations do not identify causal channels.",
+      "commands": [
+        {
+          "cwd": ".",
+          "kind": "from-saved",
+          "argv": [
+            "python3",
+            "scripts/check_thesis_results.py"
+          ]
+        },
+        {
+          "cwd": "replication",
+          "kind": "solve-model",
+          "argv": [
+            "python3",
+            "experiments/robustness_gkkoc_2022/tier1.py"
+          ]
+        }
+      ]
+    }
+  ]
+}

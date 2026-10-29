@@ -1,0 +1,42 @@
+{
+  "theta_max": 9.655704607925557,
+  "debt_output": 2.503340640262439,
+  "target": 2.5,
+  "gap": 0.0033406402624391873,
+  "within_tolerance": true,
+  "parameters": {
+    "sigma_z_eps": 0.27830776649078415,
+    "x_hi": 1.4620688061231504,
+    "p1_x": 0.0502979531819958,
+    "p2_x": 0.03287436873599738,
+    "theta_max": 9.655704607925557
+  },
+  "benchmark": "experiments/robustness_gkkoc_2022/runs/looser/control/solves/85b3fb91fc4f",
+  "path": [
+    {
+      "theta_max": 2.9521292419330263,
+      "debt_output": 1.5649216188381014,
+      "source": "fresh thesis benchmark"
+    },
+    {
+      "theta_max": 8.0,
+      "debt_output": 2.3918138799508912,
+      "folder": "experiments/robustness_gkkoc_2022/runs/looser/control/solves/2d375cccd726"
+    },
+    {
+      "theta_max": 12.8,
+      "debt_output": 2.6374539136286277,
+      "folder": "experiments/robustness_gkkoc_2022/runs/looser/control/solves/521a71cabb46"
+    },
+    {
+      "theta_max": 10.114042114637554,
+      "debt_output": 2.5299484317956207,
+      "folder": "experiments/robustness_gkkoc_2022/runs/looser/control/solves/e11967fd4a92"
+    },
+    {
+      "theta_max": 9.655704607925557,
+      "debt_output": 2.503340640262439,
+      "folder": "experiments/robustness_gkkoc_2022/runs/looser/control/solves/85b3fb91fc4f"
+    }
+  ]
+}

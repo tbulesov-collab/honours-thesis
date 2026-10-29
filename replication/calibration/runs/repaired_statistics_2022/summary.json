@@ -1,0 +1,113 @@
+{
+  "purpose": "Model statistics computed with the fractional-cutoff percentile routine (Statistics_Schema 3) from saved equilibrium states. No equilibrium is solved; aggregates are unchanged.",
+  "states": {
+    "published_vector": {
+      "saved_state": "calibration/runs/scf_2022/97e6cd9455b2",
+      "entrepreneur_test": "corrected",
+      "environment": {
+        "GKK_RHO_Z": "0.1",
+        "GKK_THETA_MAX": "2.8",
+        "GKK_SIGMA_Z_EPS": "0.277",
+        "GKK_X_HI": "1.5",
+        "GKK_P1_X": "0.05",
+        "GKK_P2_X": "0.03"
+      },
+      "bench_dbn_sha256": "54c0fe8d927dc0771246594d1872b34ae4c38ae110811b3c268a9da715b51d0b",
+      "max_relative_aggregate_difference_vs_saved": 2.68107616956299e-16,
+      "entrepreneur_population_share": 0.06322650205719363,
+      "entrepreneur_wealth_share": 0.3302809197991682,
+      "entrepreneurs_in_top1_share": 0.5628088518473607,
+      "entrepreneurs_in_top1_share_old_routine": 0.6241307867718395,
+      "top1_wealth_share": 0.3518218259947259,
+      "top01_wealth_share": 0.2218734741144776,
+      "top01_wealth_share_old_routine": 0.22447238079030765
+    },
+    "published_vector_original_test": {
+      "saved_state": "calibration/runs/scf_2022/97e6cd9455b2",
+      "entrepreneur_test": "original_parentheses",
+      "environment": {
+        "GKK_RHO_Z": "0.1",
+        "GKK_THETA_MAX": "2.8",
+        "GKK_SIGMA_Z_EPS": "0.277",
+        "GKK_X_HI": "1.5",
+        "GKK_P1_X": "0.05",
+        "GKK_P2_X": "0.03"
+      },
+      "bench_dbn_sha256": "54c0fe8d927dc0771246594d1872b34ae4c38ae110811b3c268a9da715b51d0b",
+      "max_relative_aggregate_difference_vs_saved": 2.68107616956299e-16,
+      "entrepreneur_population_share": 0.07060788636211567,
+      "entrepreneur_wealth_share": 0.3853232462825751,
+      "entrepreneurs_in_top1_share": 0.6084230975366782,
+      "entrepreneurs_in_top1_share_old_routine": 0.6787176665296919,
+      "top1_wealth_share": 0.3518218259947259,
+      "top01_wealth_share": 0.2218734741144776,
+      "top01_wealth_share_old_routine": 0.22447238079030765,
+      "old_routine_source": "calibration/runs/scf_2022/1332678d1477/Entrepreneur_10_50.txt"
+    },
+    "scf_step": {
+      "saved_state": "calibration/runs/scf_2022/3f5118dda04e",
+      "entrepreneur_test": "corrected",
+      "environment": {
+        "GKK_RHO_Z": "0.1",
+        "GKK_THETA_MAX": "2.8",
+        "GKK_SIGMA_Z_EPS": "0.27830776649078415",
+        "GKK_X_HI": "1.4620688061231504",
+        "GKK_P1_X": "0.0502979531819958",
+        "GKK_P2_X": "0.03287436873599738"
+      },
+      "bench_dbn_sha256": "bde48ac88d7199fe3b1bd03c6b17bd92fb7b2cbc3be8d46ac4b2ca9465977522",
+      "max_relative_aggregate_difference_vs_saved": 0.0,
+      "entrepreneur_population_share": 0.06396357495812524,
+      "entrepreneur_wealth_share": 0.3393738911107161,
+      "entrepreneurs_in_top1_share": 0.5710599171336055,
+      "entrepreneurs_in_top1_share_old_routine": 0.6460521975490288,
+      "top1_wealth_share": 0.35904616087153973,
+      "top01_wealth_share": 0.22259354606483558,
+      "top01_wealth_share_old_routine": 0.22797745187132565
+    },
+    "financing": {
+      "saved_state": "calibration/runs/business_financing_2022/4c6c1d38eeac",
+      "entrepreneur_test": "corrected",
+      "environment": {
+        "GKK_RHO_Z": "0.1",
+        "GKK_THETA_MAX": "2.9521292419330263",
+        "GKK_SIGMA_Z_EPS": "0.27830776649078415",
+        "GKK_X_HI": "1.4620688061231504",
+        "GKK_P1_X": "0.0502979531819958",
+        "GKK_P2_X": "0.032874368735997382"
+      },
+      "bench_dbn_sha256": "b58fe14eb13662cd9dc98081de28ce4dac13413b46ae565280a26b2f7497e074",
+      "max_relative_aggregate_difference_vs_saved": 8.098047134888884e-16,
+      "entrepreneur_population_share": 0.061315282156518415,
+      "entrepreneur_wealth_share": 0.32230618044280207,
+      "entrepreneurs_in_top1_share": 0.5477201755616088,
+      "entrepreneurs_in_top1_share_old_routine": 0.6158227118943921,
+      "top1_wealth_share": 0.354734473588917,
+      "top01_wealth_share": 0.22151944036025828,
+      "top01_wealth_share_old_routine": 0.22595867805147535
+    }
+  },
+  "rn_reform_tail_shares": {
+    "method": "tail_shares.py (Python port of PERCENTILE_BIN_WEIGHTS) on saved DBN; validated against Fortran repaired benchmark top-0.1% (1e-14) and saved reform top-1% (5e-12).",
+    "benchmark_dbn": "calibration/runs/business_financing_2022/rn_reform/Bench_Files/DBN",
+    "reform_dbn": "calibration/runs/business_financing_2022/rn_reform/Tax_Reform/Exp_Files/Exp_results_DBN",
+    "reform_dbn_sha256": "b7ab58d2c34356d7f241402591d038c671d8621851fdb007935ac3592b64cfa0",
+    "benchmark": {
+      "top1": 0.3547344735889187,
+      "top01": 0.22151944036026827,
+      "top001": 0.1266732361296977
+    },
+    "reform": {
+      "top1": 0.43170263293775696,
+      "top01": 0.2913221064544248,
+      "top001": 0.17414271849995264
+    },
+    "reform_top01_old_routine": 0.29730892580038304
+  },
+  "sources": {
+    "GKK_Stats.f90_sha256": "231d768df0de05890e013eff21bae14e4c133412e7e6613b1fc976dc1604d7be",
+    "GKK_Main.f90_sha256": "ed6ad78788d02f82ca4f67365a05a5b76f4c0f287477b200c9bdff9f37642de7",
+    "stats_check_main": "GKK_Main.f90 with Benchmark_Only=.true. and Tax_Reform_tktw=.false.",
+    "original_test_variant": "GKK_Stats.f90 with the six entrepreneur-test parenthesis fixes reverted; reproduces the saved original-test population (7.0608%) and wealth (38.5323%) shares exactly"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "context_id": "57510a7dba705c7167b3076b661502deb22301ab148c8e24dfb922916f46dbe8",
+  "rates": [
+    0.02,
+    0.0,
+    0.4
+  ],
+  "environment": {
+    "GKK_DBN_MAX_ITER": "2000",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.33614438091501808",
+    "GKK_X_HI": "1.8142855154495454",
+    "GKK_P1_X": "0.048878038165744722",
+    "GKK_P2_X": "0.036354690972634975",
+    "GKK_THETA_MAX": "3.0102622206824723",
+    "OMP_NUM_THREADS": "4",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "GKK_JOINT_BUDGET_TOL": "0.0001",
+    "GKK_JOINT_FULL_OUTPUT": "0",
+    "GKK_JOINT_FIXED_LABOR": "0",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_RESULT_FOLDER": "experiments/robustness_gkkoc_2022/runs/c7_policies/v2_57510a7dba70/14612e1e02edc108_3c45f57e",
+    "GKK_JOINT_TAUW": "0.02",
+    "GKK_JOINT_TAUK": "0",
+    "GKK_JOINT_TAUBQ": "0.40000000000000002"
+  }
+}

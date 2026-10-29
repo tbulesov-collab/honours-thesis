@@ -1,0 +1,22 @@
+{
+  "cache_version": "entrepreneur-income-share-parentheses-v2",
+  "target_file": "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/scf_2022_moments_income_aligned.csv",
+  "parameters": {
+    "sigma_z_eps": 0.26271316566867453,
+    "x_hi": 1.815338206607068,
+    "p1_x": 0.04943966597079575,
+    "p2_x": 0.02286943387056594
+  },
+  "moments": [
+    0.42954565010839585,
+    0.49137162189976386,
+    0.31356114814719066
+  ],
+  "targets": [
+    0.36,
+    0.3984028495853221,
+    0.2433009358000577
+  ],
+  "objective": 184.16287513718143,
+  "run_directory": "/Users/macbookair/Desktop/Honours Thesis/Guvenen Wealth Tax Paper Code copy/Wealth Tax - Replica/calibration/runs/scf_2022/927a14b8d96f"
+}

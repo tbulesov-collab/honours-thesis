@@ -1,0 +1,747 @@
+{
+  "schema_version": 2,
+  "scope": "Arithmetic reproduction of the current five-column stationary joint-policy table, output accounting, matched estate removal and the 95% subsidy tie. No model execution; no certification of Euler/Bellman, asset-grid/tail or transition accuracy.",
+  "inputs_index_sha256": "c69afdcfacfd9153a86656181d9ad4115a71894f83a79a58aed502d509a176e1",
+  "benchmark_source": "replication/calibration/runs/business_financing_2022/rn_reform/output.txt",
+  "benchmark_sha256": "e70c1a318b574b3cfd6135edbee921a0b26b9ec1253b7d19f6a290608e44010f",
+  "benchmark_state_fingerprint": "698ddd71b8d173b727c0e0e185795add3e57fa2ee584bd6709e7c642bd007d3a",
+  "columns": [
+    {
+      "id": "separate_wealth",
+      "name": "Separate wealth"
+    },
+    {
+      "id": "joint_estate_40",
+      "name": "Joint, estate 40"
+    },
+    {
+      "id": "joint_estate_zero",
+      "name": "Joint, estate zero"
+    },
+    {
+      "id": "joint_subsidy_80",
+      "name": "Joint 80% subsidy"
+    },
+    {
+      "id": "joint_subsidy_95",
+      "name": "Joint 95% subsidy"
+    }
+  ],
+  "records": [
+    {
+      "id": "separate_wealth",
+      "name": "Separate wealth",
+      "status": "ok",
+      "context_id": "bf8c109fc300278d8812b0ab50f52d5a075885dff753eea713ec2a2974350139",
+      "key": "15d6fe146f961036",
+      "source_record": {
+        "path": "replication/calibration/runs/theta_max_robustness_2022/financing/v2_bf8c109fc300/15d6fe146f961036_c0817307/result.json",
+        "sha256": "c52022562b6884bbfe5737cb0d1b415de892f1253c1c9a41c666bb7f45c699cd"
+      },
+      "source_output": {
+        "path": "replication/calibration/runs/theta_max_robustness_2022/financing/v2_bf8c109fc300/15d6fe146f961036_c0817307/Joint_Tax/output_exp.txt",
+        "sha256": "a0f569bb21e7ba59a750e162e162e4990169abc41d0b3523b9c02185f67edd31"
+      },
+      "record": {
+        "schema": 2,
+        "tau_w": 0.030618034,
+        "tau_k": 0.0,
+        "tau_bq": 0.4,
+        "tau_l": 0.15377643936090346,
+        "psi": 0.8462235606390965,
+        "ce2_newborn": 8.4913007799583,
+        "ce2_population": 4.1804540608573415,
+        "ce1_newborn": 9.036920606795261,
+        "output_growth": 5.76486149180131,
+        "consumption_growth": 7.64123644807384,
+        "top1_wealth_share": 0.4447726564347309,
+        "revenue": 0.20565881380579534,
+        "revenue_gap": 1.2377177517119975e-05,
+        "revenue_relative_gap": 6.018668604257256e-05,
+        "equilibrium_converged": true,
+        "equilibrium_residual": 6.367784953845157e-10,
+        "aggregate_residual": 8.789786607200723e-07,
+        "elapsed_seconds": 2906.5732077500143,
+        "feasible": true
+      },
+      "raw": {
+        "Wealth_Tax_Above": 0.030618034,
+        "Psi": 0.8462235606390965,
+        "Tau_K": 0.0,
+        "Tau_BQ": 0.4,
+        "Statistics_Schema": 3.0,
+        "GBAR": 0.20565881380579534,
+        "KBAR": 4.14940992214796,
+        "QBAR": 5.54899051350238,
+        "NBAR": 0.574257474900795,
+        "YBAR": 1.4228187742472584,
+        "CBAR": 1.006869064026002,
+        "TFP_Q": 1.3372962945608229,
+        "Wealth_Top_1%": 0.4447726564347309,
+        "Av.Hours": 0.41940095524411986,
+        "Capital_Tax/_GDP": 0.08929230930584192,
+        "Labor_Tax/GDP": 0.09226586830155609,
+        "Average_Labor_Tax": 0.15377643936090088,
+        "Estate_Tax/GDP": 0.014159980257665534,
+        "CE2_Pop(exp)": 4.1804540608573415,
+        "CE2_NB(exp)": 8.4913007799583,
+        "Evaluation_Schema": 2.0,
+        "Equilibrium_Converged": 1.0,
+        "Equilibrium_Residual": 6.367784953845157e-10,
+        "Aggregate_Residual": 8.789786607200723e-07,
+        "Budget_Tolerance": 0.0001,
+        "Revenue_Relative_Gap": 6.018668604257256e-05
+      }
+    },
+    {
+      "id": "joint_estate_40",
+      "name": "Joint, estate 40",
+      "status": "ok",
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "key": "0f17cb8e58562d19",
+      "source_record": {
+        "path": "replication/experiments/three_tax_2022/runs/estate/v2_fecede9519f7/0f17cb8e58562d19_8148a55d/result.json",
+        "sha256": "af18d50663cde105f0947f78e113c699d79dc73be2bb8c5627fcb46aec44531f"
+      },
+      "source_output": {
+        "path": "replication/experiments/three_tax_2022/runs/estate/v2_fecede9519f7/0f17cb8e58562d19_8148a55d/Joint_Tax/output_exp.txt",
+        "sha256": "402fee6cb269daf24827b016df404f704417ca7a3606fb798d5fbc8e7df1f925"
+      },
+      "record": {
+        "schema": 2,
+        "tau_w": 0.07,
+        "tau_k": -0.5,
+        "tau_bq": 0.4,
+        "tau_l": 0.11372518103210272,
+        "psi": 0.8862748189678973,
+        "ce2_newborn": 19.864961301397123,
+        "ce2_population": 10.33354237224382,
+        "ce1_newborn": 21.170749840985764,
+        "output_growth": 16.719741649050768,
+        "consumption_growth": 19.608442344128218,
+        "top1_wealth_share": 0.5670894395861192,
+        "revenue": 0.2056529554707523,
+        "revenue_gap": 6.518842474073638e-06,
+        "revenue_relative_gap": 3.1699272698106354e-05,
+        "equilibrium_converged": true,
+        "equilibrium_residual": 1.545202691982054e-09,
+        "aggregate_residual": 7.259214398463886e-07,
+        "elapsed_seconds": 3107.2825692080078,
+        "feasible": true
+      },
+      "raw": {
+        "Wealth_Tax_Above": 0.07,
+        "Psi": 0.8862748189678973,
+        "Tau_K": -0.5,
+        "Tau_BQ": 0.4,
+        "Statistics_Schema": 3.0,
+        "GBAR": 0.2056529554707523,
+        "KBAR": 4.773792597783466,
+        "QBAR": 6.86444078863456,
+        "NBAR": 0.5872874550730305,
+        "YBAR": 1.5701910577969471,
+        "CBAR": 1.1188095228796067,
+        "TFP_Q": 1.437942819682156,
+        "Wealth_Top_1%": 0.5670894395861192,
+        "Av.Hours": 0.428249143220826,
+        "Capital_Tax/_GDP": 0.08882493545315874,
+        "Labor_Tax/GDP": 0.06823511039415586,
+        "Average_Labor_Tax": 0.11372518103210028,
+        "Estate_Tax/GDP": 0.014938180343870176,
+        "CE2_Pop(exp)": 10.33354237224382,
+        "CE2_NB(exp)": 19.864961301397123,
+        "Evaluation_Schema": 2.0,
+        "Equilibrium_Converged": 1.0,
+        "Equilibrium_Residual": 1.545202691982054e-09,
+        "Aggregate_Residual": 7.259214398463886e-07,
+        "Budget_Tolerance": 0.0001,
+        "Revenue_Relative_Gap": 3.1699272698106354e-05
+      }
+    },
+    {
+      "id": "joint_estate_zero",
+      "name": "Joint, estate zero",
+      "status": "ok",
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "key": "54b48c5df64e6d40",
+      "source_record": {
+        "path": "replication/experiments/policy_reoptimization_2022/runs/thesis/v2_fecede9519f7/54b48c5df64e6d40_35be0941/result.json",
+        "sha256": "cff8309be82d4e4fa569f2c427d2cfb5a832feaacc350151aa50df9c9ffe7e44"
+      },
+      "source_output": {
+        "path": "replication/experiments/policy_reoptimization_2022/runs/thesis/v2_fecede9519f7/54b48c5df64e6d40_35be0941/Joint_Tax/output_exp.txt",
+        "sha256": "487844d75262c8de5eb1aa03e008600cffbab22d5b0008e2c6f42e6a58a13bd3"
+      },
+      "record": {
+        "schema": 2,
+        "tau_w": 0.07,
+        "tau_k": -0.5,
+        "tau_bq": 0.0,
+        "tau_l": 0.11092787923106373,
+        "psi": 0.8890721207689363,
+        "ce2_newborn": 23.53851786470429,
+        "ce2_population": 11.74063683804265,
+        "ce1_newborn": 22.547173945958782,
+        "output_growth": 19.357619504743194,
+        "consumption_growth": 21.74466573116689,
+        "top1_wealth_share": 0.60145905050361,
+        "revenue": 0.2056625133137475,
+        "revenue_gap": 1.6076685469268437e-05,
+        "revenue_relative_gap": 7.817633863662946e-05,
+        "equilibrium_converged": true,
+        "equilibrium_residual": 2.4358756328191414e-09,
+        "aggregate_residual": 7.958628965592095e-07,
+        "elapsed_seconds": 3618.627319207997,
+        "feasible": true
+      },
+      "raw": {
+        "Wealth_Tax_Above": 0.07,
+        "Psi": 0.8890721207689363,
+        "Tau_K": -0.5,
+        "Tau_BQ": 0.0,
+        "Statistics_Schema": 3.0,
+        "GBAR": 0.2056625133137475,
+        "KBAR": 5.082608128583934,
+        "QBAR": 7.258886732189881,
+        "NBAR": 0.5872872034328442,
+        "YBAR": 1.6056775330242723,
+        "CBAR": 1.1387916162968972,
+        "TFP_Q": 1.4281814667880524,
+        "Wealth_Top_1%": 0.60145905050361,
+        "Av.Hours": 0.42827418800680317,
+        "Capital_Tax/_GDP": 0.10071283165643947,
+        "Labor_Tax/GDP": 0.0665567302792822,
+        "Average_Labor_Tax": 0.11092787923106447,
+        "Estate_Tax/GDP": 0.0,
+        "CE2_Pop(exp)": 11.74063683804265,
+        "CE2_NB(exp)": 23.53851786470429,
+        "Evaluation_Schema": 2.0,
+        "Equilibrium_Converged": 1.0,
+        "Equilibrium_Residual": 2.4358756328191414e-09,
+        "Aggregate_Residual": 7.958628965592095e-07,
+        "Budget_Tolerance": 0.0001,
+        "Revenue_Relative_Gap": 7.817633863662946e-05
+      }
+    },
+    {
+      "id": "joint_subsidy_80",
+      "name": "Joint 80% subsidy",
+      "status": "ok",
+      "context_id": "606ecb7a15de14fef259f54a5dee8e81b69fc2770aaf4e8521fa1545b95ec838",
+      "key": "d897e64637565c79",
+      "source_record": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/d897e64637565c79_0d5d0f96/result.json",
+        "sha256": "7e1838020d168a668cc96f6b9e4bc0753fb8696cd77fcf65824b83b8d6080659"
+      },
+      "source_output": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/d897e64637565c79_0d5d0f96/Joint_Tax/output_exp.txt",
+        "sha256": "f3c97159354b8a4bd2f97da87c83807df39eed76cd55beebbc49881c7eeb17b6"
+      },
+      "record": {
+        "schema": 2,
+        "tau_w": 0.08,
+        "tau_k": -0.8,
+        "tau_bq": 0.0,
+        "tau_l": 0.11947163738146738,
+        "psi": 0.8805283626185326,
+        "ce2_newborn": 28.713102277579484,
+        "ce2_population": 14.839749907676648,
+        "ce1_newborn": 27.687079703183258,
+        "output_growth": 26.517213405540986,
+        "consumption_growth": 28.351094235017005,
+        "top1_wealth_share": 0.6460917428275491,
+        "revenue": 0.2056632294793082,
+        "revenue_gap": 1.679285102998418e-05,
+        "revenue_relative_gap": 8.165884760910568e-05,
+        "equilibrium_converged": true,
+        "equilibrium_residual": 3.512264513732752e-09,
+        "aggregate_residual": 8.390969626541612e-07,
+        "elapsed_seconds": 3039.744698124996,
+        "feasible": true
+      },
+      "raw": {
+        "Wealth_Tax_Above": 0.08,
+        "Psi": 0.8805283626185326,
+        "Tau_K": -0.8,
+        "Tau_BQ": 0.0,
+        "Statistics_Schema": 3.0,
+        "GBAR": 0.2056632294793082,
+        "KBAR": 5.721505852036142,
+        "QBAR": 8.351469930055696,
+        "NBAR": 0.5894148209872052,
+        "YBAR": 1.7019931190739068,
+        "CBAR": 1.2005877151129407,
+        "TFP_Q": 1.459662918475145,
+        "Wealth_Top_1%": 0.6460917428275491,
+        "Av.Hours": 0.4299251856566783,
+        "Capital_Tax/_GDP": 0.08339812742657221,
+        "Labor_Tax/GDP": 0.071682985038245,
+        "Average_Labor_Tax": 0.11947163738146796,
+        "Estate_Tax/GDP": 0.0,
+        "CE2_Pop(exp)": 14.839749907676648,
+        "CE2_NB(exp)": 28.713102277579484,
+        "Evaluation_Schema": 2.0,
+        "Equilibrium_Converged": 1.0,
+        "Equilibrium_Residual": 3.512264513732752e-09,
+        "Aggregate_Residual": 8.390969626541612e-07,
+        "Budget_Tolerance": 0.0001,
+        "Revenue_Relative_Gap": 8.165884760910568e-05
+      }
+    },
+    {
+      "id": "joint_subsidy_95",
+      "name": "Joint 95% subsidy",
+      "status": "ok",
+      "context_id": "606ecb7a15de14fef259f54a5dee8e81b69fc2770aaf4e8521fa1545b95ec838",
+      "key": "b29768ab5f73dab8",
+      "source_record": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/b29768ab5f73dab8_daaff08f/result.json",
+        "sha256": "079480eaa55d2189410dee2ade1449a877e89898c038262f2da120c4c46cf117"
+      },
+      "source_output": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/b29768ab5f73dab8_daaff08f/Joint_Tax/output_exp.txt",
+        "sha256": "a511aa0740b9d091d7f716e1cfdd62d7f883dbb2052cb1ce35db65d4e1dcccd1"
+      },
+      "record": {
+        "schema": 2,
+        "tau_w": 0.09,
+        "tau_k": -0.95,
+        "tau_bq": 0.0,
+        "tau_l": 0.11096315993293471,
+        "psi": 0.8890368400670653,
+        "ce2_newborn": 31.007227283080564,
+        "ce2_population": 15.987918625184317,
+        "ce1_newborn": 30.29289100525716,
+        "output_growth": 28.56176146797398,
+        "consumption_growth": 30.43942663982957,
+        "top1_wealth_share": 0.666406953589978,
+        "revenue": 0.20566570659138966,
+        "revenue_gap": 1.9269963111440136e-05,
+        "revenue_relative_gap": 9.370433753866632e-05,
+        "equilibrium_converged": true,
+        "equilibrium_residual": 3.847967641247042e-09,
+        "aggregate_residual": 7.043482800652419e-07,
+        "elapsed_seconds": 2933.7505857909564,
+        "feasible": true
+      },
+      "raw": {
+        "Wealth_Tax_Above": 0.09,
+        "Psi": 0.8890368400670653,
+        "Tau_K": -0.95,
+        "Tau_BQ": 0.0,
+        "Statistics_Schema": 3.0,
+        "GBAR": 0.20566570659138966,
+        "KBAR": 5.851251111769475,
+        "QBAR": 8.649588887442729,
+        "NBAR": 0.591384153541787,
+        "YBAR": 1.729497730029276,
+        "CBAR": 1.2201218394243345,
+        "TFP_Q": 1.4782460575046161,
+        "Wealth_Top_1%": 0.666406953589978,
+        "Av.Hours": 0.43142731740247625,
+        "Capital_Tax/_GDP": 0.08519125363353597,
+        "Labor_Tax/GDP": 0.06657789849923106,
+        "Average_Labor_Tax": 0.11096315993293757,
+        "Estate_Tax/GDP": 0.0,
+        "CE2_Pop(exp)": 15.987918625184317,
+        "CE2_NB(exp)": 31.007227283080564,
+        "Evaluation_Schema": 2.0,
+        "Equilibrium_Converged": 1.0,
+        "Equilibrium_Residual": 3.847967641247042e-09,
+        "Aggregate_Residual": 7.043482800652419e-07,
+        "Budget_Tolerance": 0.0001,
+        "Revenue_Relative_Gap": 9.370433753866632e-05
+      }
+    }
+  ],
+  "auxiliary_records": [
+    {
+      "id": "joint_subsidy_95_tie",
+      "name": "Joint 95% subsidy, 10% wealth",
+      "status": "ok",
+      "context_id": "606ecb7a15de14fef259f54a5dee8e81b69fc2770aaf4e8521fa1545b95ec838",
+      "key": "2099fc18711dc078",
+      "source_record": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/2099fc18711dc078_1edd2ec7/result.json",
+        "sha256": "6a9682e196cd1a975002490ea573aff648ed2d523bd51bf6efeb51f24445bc78"
+      },
+      "source_output": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/2099fc18711dc078_1edd2ec7/Joint_Tax/output_exp.txt",
+        "sha256": "6e7fcc126ee67960ab9aa01be50239c1b828ffd9f83e87f3dc863fb966600427"
+      },
+      "record": {
+        "schema": 2,
+        "tau_w": 0.1,
+        "tau_k": -0.95,
+        "tau_bq": 0.0,
+        "tau_l": 0.08926540155435614,
+        "psi": 0.9107345984456439,
+        "ce2_newborn": 30.94630473035913,
+        "ce2_population": 15.618703531253608,
+        "ce1_newborn": 30.768054117839785,
+        "output_growth": 26.42956622610244,
+        "consumption_growth": 28.950343145796765,
+        "top1_wealth_share": 0.6700086869043081,
+        "revenue": 0.20565105212668788,
+        "revenue_gap": 4.615498409660246e-06,
+        "revenue_relative_gap": 2.244385307781002e-05,
+        "equilibrium_converged": true,
+        "equilibrium_residual": 2.331382699497257e-09,
+        "aggregate_residual": 6.655123272704148e-07,
+        "elapsed_seconds": 2900.4632347500883,
+        "feasible": true
+      },
+      "raw": {
+        "Wealth_Tax_Above": 0.1,
+        "Psi": 0.9107345984456439,
+        "Tau_K": -0.95,
+        "Tau_BQ": 0.0,
+        "Statistics_Schema": 3.0,
+        "GBAR": 0.20565105212668788,
+        "KBAR": 5.550706890863053,
+        "QBAR": 8.258720182838092,
+        "NBAR": 0.5931340853482839,
+        "YBAR": 1.7008140313253293,
+        "CBAR": 1.2061930501111733,
+        "TFP_Q": 1.487868184218602,
+        "Wealth_Top_1%": 0.6700086869043081,
+        "Av.Hours": 0.43272540949487215,
+        "Capital_Tax/_GDP": 0.10137504433930704,
+        "Labor_Tax/GDP": 0.05355924240962136,
+        "Average_Labor_Tax": 0.08926540155435432,
+        "Estate_Tax/GDP": 0.0,
+        "CE2_Pop(exp)": 15.618703531253608,
+        "CE2_NB(exp)": 30.94630473035913,
+        "Evaluation_Schema": 2.0,
+        "Equilibrium_Converged": 1.0,
+        "Equilibrium_Residual": 2.331382699497257e-09,
+        "Aggregate_Residual": 6.655123272704148e-07,
+        "Budget_Tolerance": 0.0001,
+        "Revenue_Relative_Gap": 2.244385307781002e-05
+      }
+    }
+  ],
+  "table_cells": [
+    {
+      "label": "Wealth tax",
+      "raw_values": [
+        3.0618034,
+        7.000000000000001,
+        7.000000000000001,
+        8.0,
+        9.0
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "3.06",
+        "7.00",
+        "7.00",
+        "8.00",
+        "9.00"
+      ]
+    },
+    {
+      "label": "Capital-income tax",
+      "raw_values": [
+        0.0,
+        -50.0,
+        -50.0,
+        -80.0,
+        -95.0
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "0.00",
+        "-50.00",
+        "-50.00",
+        "-80.00",
+        "-95.00"
+      ]
+    },
+    {
+      "label": "Estate tax",
+      "raw_values": [
+        40.0,
+        40.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "digits": 0,
+      "percent": true,
+      "display_values": [
+        "40",
+        "40",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "Labour tax",
+      "raw_values": [
+        15.377643936090346,
+        11.372518103210272,
+        11.092787923106373,
+        11.947163738146738,
+        11.096315993293471
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "15.38",
+        "11.37",
+        "11.09",
+        "11.95",
+        "11.10"
+      ]
+    },
+    {
+      "label": "Capital change",
+      "raw_values": [
+        2.438586266332221,
+        17.853037906767245,
+        25.476923467804124,
+        41.249715452005795,
+        44.452802452617355
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "2.44",
+        "17.85",
+        "25.48",
+        "41.25",
+        "44.45"
+      ]
+    },
+    {
+      "label": "Intermediate TFP change",
+      "raw_values": [
+        7.064597370579229,
+        15.12240754525127,
+        14.340908843991084,
+        16.861329309694106,
+        18.34910453659342
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "7.06",
+        "15.12",
+        "14.34",
+        "16.86",
+        "18.35"
+      ]
+    },
+    {
+      "label": "Effective labour change",
+      "raw_values": [
+        3.235571282697247,
+        5.5780004293362495,
+        5.577955191408113,
+        5.960441834239361,
+        6.314473222952199
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "3.24",
+        "5.58",
+        "5.58",
+        "5.96",
+        "6.31"
+      ]
+    },
+    {
+      "label": "Output change",
+      "raw_values": [
+        5.76486149180131,
+        16.719741649050768,
+        19.357619504743194,
+        26.517213405540986,
+        28.56176146797398
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "5.76",
+        "16.72",
+        "19.36",
+        "26.52",
+        "28.56"
+      ]
+    },
+    {
+      "label": "Consumption change",
+      "raw_values": [
+        7.64123644807384,
+        19.608442344128218,
+        21.74466573116689,
+        28.351094235017005,
+        30.43942663982957
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "7.64",
+        "19.61",
+        "21.74",
+        "28.35",
+        "30.44"
+      ]
+    },
+    {
+      "label": "Average hours",
+      "raw_values": [
+        0.41940095524411986,
+        0.428249143220826,
+        0.42827418800680317,
+        0.4299251856566783,
+        0.43142731740247625
+      ],
+      "digits": 2,
+      "percent": false,
+      "display_values": [
+        "0.42",
+        "0.43",
+        "0.43",
+        "0.43",
+        "0.43"
+      ]
+    },
+    {
+      "label": "Net lifetime capital tax / GDP",
+      "raw_values": [
+        8.929230930584191,
+        8.882493545315874,
+        10.071283165643948,
+        8.339812742657221,
+        8.519125363353597
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "8.93",
+        "8.88",
+        "10.07",
+        "8.34",
+        "8.52"
+      ]
+    },
+    {
+      "label": "Labour tax / GDP",
+      "raw_values": [
+        9.22658683015561,
+        6.823511039415586,
+        6.65567302792822,
+        7.1682985038244995,
+        6.657789849923105
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "9.23",
+        "6.82",
+        "6.66",
+        "7.17",
+        "6.66"
+      ]
+    },
+    {
+      "label": "Estate tax / GDP",
+      "raw_values": [
+        1.4159980257665534,
+        1.4938180343870175,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "1.42",
+        "1.49",
+        "0.00",
+        "0.00",
+        "0.00"
+      ]
+    },
+    {
+      "label": "Newborn CE2",
+      "raw_values": [
+        8.4913007799583,
+        19.864961301397123,
+        23.53851786470429,
+        28.713102277579484,
+        31.007227283080564
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "8.49",
+        "19.86",
+        "23.54",
+        "28.71",
+        "31.01"
+      ]
+    },
+    {
+      "label": "Population CE2",
+      "raw_values": [
+        4.1804540608573415,
+        10.33354237224382,
+        11.74063683804265,
+        14.839749907676648,
+        15.987918625184317
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "4.18",
+        "10.33",
+        "11.74",
+        "14.84",
+        "15.99"
+      ]
+    },
+    {
+      "label": "Top 1% wealth share",
+      "raw_values": [
+        44.47726564347309,
+        56.708943958611925,
+        60.145905050361,
+        64.6091742827549,
+        66.6406953589978
+      ],
+      "digits": 2,
+      "percent": true,
+      "display_values": [
+        "44.48",
+        "56.71",
+        "60.15",
+        "64.61",
+        "66.64"
+      ]
+    }
+  ],
+  "output_log_contributions": {
+    "capital": 5.606997846268501,
+    "intermediate_productivity": 2.9025443868036955,
+    "effective_labour": 1.3461926202689822
+  },
+  "output_log_difference": 9.855734853341191,
+  "output_log_shares_percent": {
+    "capital": 56.890713170592996,
+    "intermediate_productivity": 29.450309185415072,
+    "effective_labour": 13.658977643991808
+  },
+  "welfare_checks": {
+    "estate_removal_gain_pp": 3.673556563307166,
+    "subsidy_95_gap_pp": 0.060922552721432766,
+    "reporting_tie_pp": 0.15,
+    "subsidy_95_tied": true
+  }
+}

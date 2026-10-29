@@ -1,0 +1,21 @@
+{
+  "na": 301,
+  "elapsed_minutes": 22.250926005549264,
+  "bench_sha256": "349a2597e2e9a2509a2c870e5f164d704d4c89db4c13c8660d53ce573eb998a3",
+  "environment": {
+    "GKK_AGG_TOL": "1e-6",
+    "GKK_BUDGET_MAX_ITER": "100",
+    "GKK_DBN_MAX_ITER": "2000",
+    "GKK_DBN_TOL": "1e-7",
+    "GKK_P1_X": "0.0502979531819958",
+    "GKK_P2_X": "0.032874368735997382",
+    "GKK_RESULT_FOLDER": "experiments/grid_accuracy_2022/runs/na301/benchmark/",
+    "GKK_RHO_Z": "0.1",
+    "GKK_SIGMA_Z_EPS": "0.27830776649078415",
+    "GKK_THETA_MAX": "2.9521292419330263",
+    "GKK_X_HI": "1.4620688061231504",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NESTED": "FALSE",
+    "OMP_NUM_THREADS": "4"
+  }
+}

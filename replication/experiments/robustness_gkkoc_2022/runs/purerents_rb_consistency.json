@@ -1,0 +1,10 @@
+{
+  "folder": "experiments/robustness_gkkoc_2022/runs/purerents_rb/solves/ad157f54c267",
+  "relative_differences": {
+    "KBAR": 2.7179591910453382e-11,
+    "YBAR": 3.4114266966867035e-11,
+    "Debt_Output": 2.8776758753679132e-11,
+    "Wealth_Top_1%": 6.403877428340365e-11
+  },
+  "passed": true
+}

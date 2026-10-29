@@ -1,0 +1,39 @@
+{
+  "patch": {
+    "file": "programfunctions.f90",
+    "old": "brent(-0.1_DP,0.01_DP,10.0_DP,Agg_Debt, brent_tol,R)",
+    "new": "brent(-0.1_DP,min(max(R,-0.09_DP),0.49_DP),0.5_DP,Agg_Debt, brent_tol,R)",
+    "count": 3
+  },
+  "sources_sha256": {
+    "GKK_Main.f90": "ed6ad78788d02f82ca4f67365a05a5b76f4c0f287477b200c9bdff9f37642de7",
+    "GKK_Main_bench.f90": "5d265850f8cee7d13ef0aeba0fa7ff1ca29536e5ca2819ef65873f3cabc45454",
+    "GKK_Stats.f90": "231d768df0de05890e013eff21bae14e4c133412e7e6613b1fc976dc1604d7be",
+    "NRTYPE.F90": "d77fe23f0f0c29d8be409cbf9b4c73c53fc7b784da0d07ada38bdb9373da654c",
+    "NRUTIL.F90": "7dd6a9dac1b108d635d896b68cf1711203418a1cf007bea7fa151f3552dd5d71",
+    "Opt_Tax_Functions.f90": "17ac4b71b4682bb78df0bced079c2488f6bf6c6074a786e5bfab4b7dfa03131c",
+    "Opt_Tax_Parameters.f90": "aacdc73337378f8e26c517251a28a8c6f4848995780a73af12b638e6a1572db8",
+    "Simulation_Module.f90": "0e72af660a939aa3ddf8bec04069c13fe95ec3300a6675833b1a8c02dd4e80c3",
+    "Toolbox.f90": "fbdbc1a402e915804514161026ddb8b3d5cba560d20bcbc12cecf56153d80892",
+    "global.f90": "45d58422807310611af1b413dd7f62a52ba6916d57a016c1cd68e33e4b23e43a",
+    "parameters.f90": "d5bd75f3ff9b6462f0e22ec4fe8f62f52fca59c90e070846c6013a7b4d6ebbc1",
+    "programfunctions.f90": "317fc7f7b153e96bc5d9c3e44fb219eede4251e3a87280b68f5dfac1940d44b7"
+  },
+  "live_sources_sha256": {
+    "NRTYPE.F90": "d77fe23f0f0c29d8be409cbf9b4c73c53fc7b784da0d07ada38bdb9373da654c",
+    "NRUTIL.F90": "7dd6a9dac1b108d635d896b68cf1711203418a1cf007bea7fa151f3552dd5d71",
+    "Toolbox.f90": "fbdbc1a402e915804514161026ddb8b3d5cba560d20bcbc12cecf56153d80892",
+    "parameters.f90": "d5bd75f3ff9b6462f0e22ec4fe8f62f52fca59c90e070846c6013a7b4d6ebbc1",
+    "global.f90": "45d58422807310611af1b413dd7f62a52ba6916d57a016c1cd68e33e4b23e43a",
+    "programfunctions.f90": "92214a02d340bde04393adb30ee4d5a4f3f65479a181b08b8b5f17f4fdbfc642",
+    "Simulation_Module.f90": "0e72af660a939aa3ddf8bec04069c13fe95ec3300a6675833b1a8c02dd4e80c3",
+    "GKK_Stats.f90": "231d768df0de05890e013eff21bae14e4c133412e7e6613b1fc976dc1604d7be",
+    "Opt_Tax_Parameters.f90": "aacdc73337378f8e26c517251a28a8c6f4848995780a73af12b638e6a1572db8",
+    "Opt_Tax_Functions.f90": "17ac4b71b4682bb78df0bced079c2488f6bf6c6074a786e5bfab4b7dfa03131c",
+    "GKK_Main.f90": "ed6ad78788d02f82ca4f67365a05a5b76f4c0f287477b200c9bdff9f37642de7"
+  },
+  "executables_sha256": {
+    "bench.a": "02220047393b4b8037ce400a5457cfd21e3cb9a771ecd479e73a181abac5759b",
+    "eval.a": "a794474f4edde87c3c4c4dcb0a109a195605585bcf86c4e2464d920d98f3a81e"
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "scope": "Pinned compact index for arithmetic reproduction of the current five-column joint-policy table. Source reports, result records and context manifests are included in replication/. No solver or bulk arrays are read. Historical absolute prefixes in source metadata are not filesystem dependencies.",
+  "benchmark": {
+    "id": "reported_financing_2022_saved",
+    "source_directory": "calibration/runs/business_financing_2022/rn_reform",
+    "output": {
+      "path": "replication/calibration/runs/business_financing_2022/rn_reform/output.txt",
+      "sha256": "e70c1a318b574b3cfd6135edbee921a0b26b9ec1253b7d19f6a290608e44010f"
+    },
+    "scope": "Saved reference benchmark; approximately 0.10 CE2-point fresh-benchmark sensitivity is documented separately. Checking this report is not a fresh equilibrium solve."
+  },
+  "alpha": 0.4,
+  "reporting_tie_pp": 0.15,
+  "table_policy_ids": [
+    "separate_wealth",
+    "joint_estate_40",
+    "joint_estate_zero",
+    "joint_subsidy_80",
+    "joint_subsidy_95"
+  ],
+  "contexts": {
+    "bf8c109fc300278d8812b0ab50f52d5a075885dff753eea713ec2a2974350139": {
+      "path": "replication/calibration/runs/theta_max_robustness_2022/financing/v2_bf8c109fc300/manifest.json",
+      "sha256": "0f46223d1b79915cbaa1eead6c125174e8d3ca7c29b9468387309687eeb8fc3a"
+    },
+    "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30": {
+      "path": "replication/experiments/policy_reoptimization_2022/runs/thesis/v2_fecede9519f7/manifest.json",
+      "sha256": "59ced47e1798216eab2673f2980ede2d08ee169d26ddfbb61043974c1168f2ec"
+    },
+    "606ecb7a15de14fef259f54a5dee8e81b69fc2770aaf4e8521fa1545b95ec838": {
+      "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/manifest.json",
+      "sha256": "c198a5d84a1b65f779a3a57e6fa6ba4083b8b46f1494a6116e04b96dd069da4d"
+    }
+  },
+  "policies": [
+    {
+      "id": "separate_wealth",
+      "name": "Separate wealth",
+      "rates": [
+        0.030618034,
+        0.0,
+        0.4
+      ],
+      "context_id": "bf8c109fc300278d8812b0ab50f52d5a075885dff753eea713ec2a2974350139",
+      "record": {
+        "path": "replication/calibration/runs/theta_max_robustness_2022/financing/v2_bf8c109fc300/15d6fe146f961036_c0817307/result.json",
+        "sha256": "c52022562b6884bbfe5737cb0d1b415de892f1253c1c9a41c666bb7f45c699cd"
+      },
+      "output": {
+        "path": "replication/calibration/runs/theta_max_robustness_2022/financing/v2_bf8c109fc300/15d6fe146f961036_c0817307/Joint_Tax/output_exp.txt",
+        "sha256": "a0f569bb21e7ba59a750e162e162e4990169abc41d0b3523b9c02185f67edd31"
+      }
+    },
+    {
+      "id": "joint_estate_40",
+      "name": "Joint, estate 40",
+      "rates": [
+        0.07,
+        -0.5,
+        0.4
+      ],
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "record": {
+        "path": "replication/experiments/three_tax_2022/runs/estate/v2_fecede9519f7/0f17cb8e58562d19_8148a55d/result.json",
+        "sha256": "af18d50663cde105f0947f78e113c699d79dc73be2bb8c5627fcb46aec44531f"
+      },
+      "output": {
+        "path": "replication/experiments/three_tax_2022/runs/estate/v2_fecede9519f7/0f17cb8e58562d19_8148a55d/Joint_Tax/output_exp.txt",
+        "sha256": "402fee6cb269daf24827b016df404f704417ca7a3606fb798d5fbc8e7df1f925"
+      }
+    },
+    {
+      "id": "joint_estate_zero",
+      "name": "Joint, estate zero",
+      "rates": [
+        0.07,
+        -0.5,
+        0.0
+      ],
+      "context_id": "fecede9519f7ed2f3ab3a1db1a6ebc7295ec273841bc9ff590202cfa7992eb30",
+      "record": {
+        "path": "replication/experiments/policy_reoptimization_2022/runs/thesis/v2_fecede9519f7/54b48c5df64e6d40_35be0941/result.json",
+        "sha256": "cff8309be82d4e4fa569f2c427d2cfb5a832feaacc350151aa50df9c9ffe7e44"
+      },
+      "output": {
+        "path": "replication/experiments/policy_reoptimization_2022/runs/thesis/v2_fecede9519f7/54b48c5df64e6d40_35be0941/Joint_Tax/output_exp.txt",
+        "sha256": "487844d75262c8de5eb1aa03e008600cffbab22d5b0008e2c6f42e6a58a13bd3"
+      }
+    },
+    {
+      "id": "joint_subsidy_80",
+      "name": "Joint 80% subsidy",
+      "rates": [
+        0.08,
+        -0.8,
+        0.0
+      ],
+      "context_id": "606ecb7a15de14fef259f54a5dee8e81b69fc2770aaf4e8521fa1545b95ec838",
+      "record": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/d897e64637565c79_0d5d0f96/result.json",
+        "sha256": "7e1838020d168a668cc96f6b9e4bc0753fb8696cd77fcf65824b83b8d6080659"
+      },
+      "output": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/d897e64637565c79_0d5d0f96/Joint_Tax/output_exp.txt",
+        "sha256": "f3c97159354b8a4bd2f97da87c83807df39eed76cd55beebbc49881c7eeb17b6"
+      }
+    },
+    {
+      "id": "joint_subsidy_95",
+      "name": "Joint 95% subsidy",
+      "rates": [
+        0.09,
+        -0.95,
+        0.0
+      ],
+      "context_id": "606ecb7a15de14fef259f54a5dee8e81b69fc2770aaf4e8521fa1545b95ec838",
+      "record": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/b29768ab5f73dab8_daaff08f/result.json",
+        "sha256": "079480eaa55d2189410dee2ade1449a877e89898c038262f2da120c4c46cf117"
+      },
+      "output": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/b29768ab5f73dab8_daaff08f/Joint_Tax/output_exp.txt",
+        "sha256": "a511aa0740b9d091d7f716e1cfdd62d7f883dbb2052cb1ce35db65d4e1dcccd1"
+      }
+    },
+    {
+      "id": "joint_subsidy_95_tie",
+      "name": "Joint 95% subsidy, 10% wealth",
+      "rates": [
+        0.1,
+        -0.95,
+        0.0
+      ],
+      "context_id": "606ecb7a15de14fef259f54a5dee8e81b69fc2770aaf4e8521fa1545b95ec838",
+      "record": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/2099fc18711dc078_1edd2ec7/result.json",
+        "sha256": "6a9682e196cd1a975002490ea573aff648ed2d523bd51bf6efeb51f24445bc78"
+      },
+      "output": {
+        "path": "replication/experiments/robustness_gkkoc_2022/runs/partB_guard/v2_606ecb7a15de/2099fc18711dc078_1edd2ec7/Joint_Tax/output_exp.txt",
+        "sha256": "6e7fcc126ee67960ab9aa01be50239c1b828ffd9f83e87f3dc863fb966600427"
+      }
+    }
+  ],
+  "reported_rows": {
+    "Wealth tax": [
+      "3.06",
+      "7.00",
+      "7.00",
+      "8.00",
+      "9.00"
+    ],
+    "Capital-income tax": [
+      "0.00",
+      "-50.00",
+      "-50.00",
+      "-80.00",
+      "-95.00"
+    ],
+    "Estate tax": [
+      "40",
+      "40",
+      "0",
+      "0",
+      "0"
+    ],
+    "Labour tax": [
+      "15.38",
+      "11.37",
+      "11.09",
+      "11.95",
+      "11.10"
+    ],
+    "Capital change": [
+      "2.44",
+      "17.85",
+      "25.48",
+      "41.25",
+      "44.45"
+    ],
+    "Intermediate TFP change": [
+      "7.06",
+      "15.12",
+      "14.34",
+      "16.86",
+      "18.35"
+    ],
+    "Effective labour change": [
+      "3.24",
+      "5.58",
+      "5.58",
+      "5.96",
+      "6.31"
+    ],
+    "Output change": [
+      "5.76",
+      "16.72",
+      "19.36",
+      "26.52",
+      "28.56"
+    ],
+    "Consumption change": [
+      "7.64",
+      "19.61",
+      "21.74",
+      "28.35",
+      "30.44"
+    ],
+    "Average hours": [
+      "0.42",
+      "0.43",
+      "0.43",
+      "0.43",
+      "0.43"
+    ],
+    "Net lifetime capital tax / GDP": [
+      "8.93",
+      "8.88",
+      "10.07",
+      "8.34",
+      "8.52"
+    ],
+    "Labour tax / GDP": [
+      "9.23",
+      "6.82",
+      "6.66",
+      "7.17",
+      "6.66"
+    ],
+    "Estate tax / GDP": [
+      "1.42",
+      "1.49",
+      "0.00",
+      "0.00",
+      "0.00"
+    ],
+    "Newborn CE2": [
+      "8.49",
+      "19.86",
+      "23.54",
+      "28.71",
+      "31.01"
+    ],
+    "Population CE2": [
+      "4.18",
+      "10.33",
+      "11.74",
+      "14.84",
+      "15.99"
+    ],
+    "Top 1% wealth share": [
+      "44.48",
+      "56.71",
+      "60.15",
+      "64.61",
+      "66.64"
+    ]
+  },
+  "reported_output_decomposition": {
+    "capital": "5.61",
+    "intermediate_productivity": "2.90",
+    "effective_labour": "1.35",
+    "total": "9.86"
+  },
+  "expected_estate_removal_gain_pp": 3.673556563307166,
+  "expected_subsidy_95_gap_pp": 0.060922552721432766
+}
