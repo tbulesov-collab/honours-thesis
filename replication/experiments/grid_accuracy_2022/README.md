@@ -1,8 +1,7 @@
 # Asset-grid accuracy check (thesis Appendix A.3)
 
 Does refining the asset grid change the headline welfare comparisons? The experiment
-covers seven policies on asset grids with 201, 301 and 401 points, with
-corresponding distribution grids of 801, 1,201 and 1,601 points. Four headline policies
+covers seven policies on asset grids with 201, 301 and 401 points. Four headline policies
 are evaluated by `run_grid_check.py`; `run_extended_grid_check.py` adds the no-estate-tax
 8%/−80%, 9%/−95% and 10%/−95% policies. Each grid uses its own freshly solved benchmark.
 The 201-point reference is the control variant in

@@ -39861,8 +39861,8 @@
       "sha256": "5f74eb66ed88f30dfb91d8bbf0770b1386cfb01d9d12e78d074257c590ec6a9e"
     },
     "experiments/grid_accuracy_2022/README.md": {
-      "bytes": 5439,
-      "sha256": "0d9b405da5aeafbe738dfb6f50e46263f394380bcc9dd2e5db89795d1135eab6"
+      "bytes": 5369,
+      "sha256": "b9a0c8c3da368a79759c1bc3225d500dba428514f625bc05236c5cc3f407b6cf"
     },
     "experiments/grid_accuracy_2022/make_grid_variant.py": {
       "bytes": 7864,
